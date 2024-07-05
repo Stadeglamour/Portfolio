@@ -1,48 +1,671 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="contact.html">
-    <link rel="stylesheet" href="projet.html">
-    <link rel="stylesheet" href="competence.html">
-    <link rel="stylesheet" href="stage.html">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <title>Portfolio BTS SIO SLAM | BLANC Mathilda</title> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+<link rel="stylesheet" href="../css/stage.css">
+
+<link rel="stylesheet" href="../html/index.html">
+<link rel="stylesheet" href="../html/contact.html">
+<link rel="stylesheet" href="../html/projet.html">
+<link rel="stylesheet" href="../html/competence.html">
+<link rel="stylesheet" href="../html/stage.html">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+<title>Portfolio BTS SIO SLAM | BLANC Mathilda</title> 
 </head>
 <body>
-    <marquee> Ce portfolio est actuellement en cours de création . . .</marquee>
- <!-- Haut de page -->
+<marquee> Ce portfolio est actuellement en cours de création . . .</marquee>
+<!-- Haut de page -->
 <header>
-    <img src="image/Mathilda.png" alt="Logo" class="logo">
-    <div class="text-animation"><h1 style="margin-left: 35px;">Bienvenue sur mon Portfolio !</h1></div>
+<img src="../img/Mathilda.png" alt="Logo" class="logo">
+<div class="text-animation"><h1 id="title_anim" style="margin-left: 35px;">Bienvenue sur mon Portfolio !</h1></div>
 </header>
 
 <nav class="content-block">
-    <a href="index.html"><i class='bx bxs-user-pin'></i> Présentation</a>
-    <a href="projet.html"><i class='bx bx-briefcase-alt-2'></i> Projets</a>
-    <a href="stage.html"><i class='bx bxs-building-house'></i> Stages</a>
-    <a href="veille.html"><i class='bx bxs-devices'></i> Veille</a>
-    <a href="competence.html"><i class='bx bxs-bar-chart-alt-2'></i> Compétences</a>
-    <a href="contact.html"><i class='bx bx-message-dots'></i> Contact</a>
-</nav>
+    <a href="../html/index.html"><i class='bx bxs-user-pin'></i> Présentation</a>
+    <a href="../html/projet.html"><i class='bx bx-briefcase-alt-2'></i> Projets</a>
+    <a href="../html/stage.html"><i class='bx bxs-building-house'></i> Stages</a>
+    <a href="../html/veille.html"><i class='bx bxs-devices'></i> Veille</a>
+    <a href="../html/competence.html"><i class='bx bxs-bar-chart-alt-2'></i> Compétences</a>
+    <a href="../html/contact.html"><i class='bx bx-message-dots'></i> Contact</a>
+    </nav>
 
 <!-- -------------------------------------------------------------
 # Stages
 -------------------------------------------------------------- -->
-<section id="stages" class="content-block">
-    <h2>Stages</h2>
-        <p>Stage de première années effectué du 27/05/2024 au 05/07/2024 dans l'entreprise NetCeler... <br> 
-        D'autres stages à venir (2025-2026) </p>
+<!-- ======= Mobile nav toggle button ======= -->
+<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+
+<!-- ======= Header ======= -->
+<header id="header">
+  <div class="d-flex flex-column">
+    <div class="profile">
+      <br>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var btsSio = document.querySelector('#navbar .bts-sio');
+          btsSio.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.classList.toggle('active');
+            var submenu = this.querySelector('.sub-menu');
+            submenu.classList.toggle('active');
+            // Ajoutez ou retirez une classe spécifique pour ajuster la hauteur du padding
+            if (submenu.classList.contains('active')) {
+              document.getElementById('navbar').classList.add('submenu-open');
+            } else {
+              document.getElementById('navbar').classList.remove('submenu-open');
+            }
+          });
+
+          // Gestionnaire d'événements pour E1
+          var e1Link = document.querySelector('.e1-link');
+          e1Link.addEventListener('click', function(e) {
+            e.stopPropagation();
+            window.location.href = "epreuve-E4.html";
+          });
+
+          // Gestionnaire d'événements pour E2
+          var e2Link = document.querySelector('.e2-link');
+          e2Link.addEventListener('click', function(e) {
+            e.stopPropagation();
+            window.location.href = "epreuve-E5.html";
+          });
+        });
+
+      </script>
+    </nav>
+  </div>
+</header>
+<!-- Fin Header -->
+
+<main id="main">
+
+    <!-- ======= Menu ======= -->
+    <section id="breadcrumbs">
+      <div class="content-block">
+  
+        <div class="d-flex justify-content-between align-items-center">
+    <p>Stage de première années effectué du 27/05/2024 au 05/07/2024 dans l'entreprise NetCeler sur Veynes(05) <br> 
+        Vous pourrais voir ci-dessous des informations à propos des stages, des entreprises ainsi que le travail réaliser en ce temps. <br>
+    Autre stage à venir (2024-2025) </p><br>
+          <h1 style="font-size: xx-large">STAGES 1 - NETCELER</h1>
+          <ol style="font-size: 20px">
+            <a style="color:#0e2442; text-decoration: underline" href="../html/index.html"><b><i class="bi bi-caret-left-fill"></i> Revenir à l'accueil</b></a>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- Fin Menu -->
+
+  <!-- ======= Stage Section ======= -->
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="content-block">
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div style="max-height: 80%" class="swiper-wrapper align-items-center">
+              <div  class="swiper-slide container-img-stage">
+                <img style="height: 100%" src="https://media.www.rovaltain.com/filer_public_thumbnails/filer_public/0a/b2/0ab2c3df-6040-48f8-8c6c-760c294b97f8/netceler.jpg__749x380_q85_background-%23fff_subsampling-2.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Informations sur l'entreprise :</h3>
+            <ul>
+              <li><strong>Nom </strong>: Netceler</li>
+              <li><strong>Forme juridique </strong>: SAS, société par actions simplifiée</li>
+              <li><strong>Capital </strong>: 	100 000,00 €</li>
+              <li><strong>Chiffre d'affaire </strong>: 7 874 518€ en 2023</li>
+              <li><strong>Siège social </strong>: Domicilié à LE CRYSVAL, 5 Av. de la Gare, 26300 Alixan</li>
+              <li><strong>Président </strong>: FINANCIERE DYDESYS</li>
+              <li><strong>Domaine d'activité  </strong>: Conseil en systèmes et logiciels informatiques</li>
+              <li><strong>Site internet  </strong>: <i class="bi bi-globe2"></i> <a href="https://netceler.com/" target="_blank">https://netceler.com/</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="margin-right: 20px;margin-left: 20px" class="portfolio-description">
+        <h2 style="text-decoration: underline">Domaine d'activités principales :</h2>
+        <p style="text-align: justify"> <span class="alinea-text"> NetCeler </span>conçoit et déploie des solutions innovantes de monitoring pour les réseaux électriques,
+            l’industrie pharmaceutique et les parkings.<br>
+          <strong> NetCeler dispose de trois produits, pour les réseaux électriques, pour l'industrie parmaceutique et pour les parkings </strong>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Stage Section -->
+<br>
+ <!-- ======= Navbar stage section ======= -->
+
+ <section style="background-image: linear-gradient(to right, rgba(18, 24, 30, 0.62), rgba(25, 42, 45, 0.71));z-index: 200" id="fixed-section">
+    <div class="fixed-section-wrapper">
+      <h2 style="padding-right: 3%;text-align: center">STAGE BTS SIO - NETCELER</h2>
+      <nav class="nav">
+        <a href="#entreprise" class="nav-item is-active" active-color="blue">Entreprise</a>
+        <a href="#stage" class="nav-item" active-color="blue">Stages</a>
+        <a href="#missions" class="nav-item" active-color="blue">Missions</a>
+        <a href="#conclusion" class="nav-item" active-color="blue">Conclusion</a>
+        <span class="nav-indicator"></span>
+      </nav>
+      <script  src="../js/stage.js"></script>
+    </div>
+  </section>
+  <!-- Fin Navbar stage Section -->
+   
+  <br><br><br>
+
+  <!-- ======= Objectif Section ======= -->
+
+  <div class="content-block">
+    <div class="section-title">
+      <h2>Objectifs du stage </h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+          <div class="icon"><i class="bi bi-cpu"></i></div>
+          <p align="justify" class="description"><i class="icofont-rounded-right"></i><i style="text-decoration: underline"><b>Mettre à jour le simulateur d'une caméra thermique d'un parking</b></i><br> 
+            description + voir détail dans les missions</p>
+        </div>
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon"><i class="bi bi-diagram-3"></i></div>
+          <p align="justify" class="description"> <i class="icofont-rounded-right"></i><i style="text-decoration: underline"><b>Faire tourner le simulateur sur une machine virtuelle (VM) :</b></i><br>
+            description + voir détail dans les missions</p>
+        </div>
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon"><i class="bi bi-headset"></i></div>
+          <p align="justify" class="description"><i style="text-decoration: underline"><b>Connecter le simulateur à une base de données :</b></i><br> description + voir détail dans les missions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="entreprise">
+  </section>
+  <!-- Fin Objectif Section -->
+ <!-- =======Entreprise Section  ======= -->
+ <section class="about">
+    <div class="content-block">
+      <div class="section-title">
+        <h2>I - L'entreprise et son secteur d'activité </h2>
+        <div class="pt-4 pt-lg-0 content" data-aos="fade-left">
+          <br>
+          <h3 style="color: white;"><b><span class="alinea-text"></span>Le secteur - parking</b></h3><br>
+          <h4 style="margin-left: 80px"> <b>1. Historique du secteur</b></h4> <br>
+          <p style="margin-left: 100px" align="justify">
+            <span class="alinea-text">Le</span> domaine et secteur parking, existent depuis..
+            <br><br>
+            <span class="alinea-text">Suite </span> suite
+            <br><br>
+            <span class="alinea-text">suite </span> suite
+            <br><br>
+          </p>
+        </div>
+        <br><br>
+        <div class="pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h4 style="margin-left: 80px"> <b> 2. L'évolution du secteur aujourd'hui</b> </h4> <br>
+          <p style="margin-left: 100px" align="justify">
+            <span class="alinea-text">Aujourd’hui </span> blabla
+            <br><br>
+            <span class="alinea-text">suite </span> suite
+            <br><br>
+            <span class="alinea-text">suite </span> suite
+            <br><br>
+            <span class="alinea-text">suite </span> suite
+          </p>
+        </div>
+        <br><br>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Entreprise Section -->
+
+
+  <!-- ======= Stage Section ======= -->
+  <section id="stage" class="resume">
+    <div class="content-block">
+      <div class="section-title">
+        <h2>II - Le cadre du stage </h2>
+
+        <div class="pt-4 pt-lg-0 content" data-aos="fade-left">
+          <br>
+          <h3 style="color: rgba(105, 210, 213, 0.868);"><b><span class="alinea-text">A - </span>L'entreprise et ses locaux</b></h3>
+          <br>
+          <p style="margin-left: 50px" align="justify">
+            <span class="alinea-text">desc</span> desc </p>
+          <br><br>
+          <div class="row">
+            <div style="padding-right: -5%" class="col-lg-6" data-aos="fade-left">
+              <h4 style="margin-left: 80px"><b>1. Le siège - Valance (26000) </b> </h4> <br>
+              <p style="margin-left: 50px" align="justify">
+                <span style="text-decoration: underline" class="alinea-text"><i>A Savoir :</i></span>
+                blabla
+              </p>
+              <br>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <h4 style="margin-left: 30%"> <b> 2. Veynes (05700)</b> </h4> <br>
+              <p style="margin-left: 50px" align="justify">
+                <span style="text-decoration: underline" class="alinea-text"><i>A Savoir :</i></span>
+                blabla
+              </p>
+              <br>
+            </div>
+          </div>
+          <div style="text-align: center">
+              <a href="https://www.google.com/maps/search/NetCeler/@44.7272711,4.3203193,8z/data=!3m1!4b1?entry=ttu" class="button_slide" target="_blank">
+                <span>VOIR</span>
+              </a>
+            </div>
+          </div>
+          <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        </div>
+      </div>
+      <br><br>
+      <br><br>
+      <div class="content-block" data-aos="fade-left">
+        <br>
+        <h3 style="color: rgba(105, 210, 213, 0.868)"><b><span class="alinea-text"> B - </span> Fonctionnement des services</b></h3><br>
+        <h4 style="color: rgba(105, 210, 213, 0.868)" style="margin-left: 80px"> <b>1. Le rôle des différentes services</b></h4> <br>
+        <p style="margin-left: 50px" align="justify">
+          <span class="alinea-text">Voici</span> les 3 services différents de l'entreprise :</p>
+        <div class="container services">
+          <div class="section-title">
+            <br><br>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+                <div class="icon"><i class="bi bi-cpu"></i></div>
+                <p align="justify" ><i class="icofont-rounded-right"></i><i style="text-decoration: underline"><b>BU pharma :</b></i><br><br></p>
+
+                <i class="bi bi-dot"></i>Rôle<br>
+                <p style="padding-left: 15%">
+                  <i class="bi bi-dot"></i>fait..<br>
+                  <i class="bi bi-dot"></i>fait..<br>
+                  <i class="bi bi-dot"></i>fait..<br>
+                </p>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bi bi-diagram-3"></i></div>
+                <p align="justify" > <i class="icofont-rounded-right"></i><i style="text-decoration: underline"><b>BU power :</b></i><br><br></p>
+                <p style="padding-left: 15%">
+                  <i class="bi bi-dot"></i>fait..<br>
+                  <i class="bi bi-dot"></i>fait..<br>
+                  <i class="bi bi-dot"></i>fait..<br>
+                </p>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon"><i class="bi bi-headset"></i></div>
+                <p align="justify" > <i class="icofont-rounded-right"></i><i style="text-decoration: underline"><b>BU parking : (mon équipe durant le stage)</b></i><br><br></p>
+
+                <p style="padding-left: 15%">
+                  <i class="bi bi-dot"></i>fait..<br>
+                  <i class="bi bi-dot"></i>fait..<br>
+                  <i class="bi bi-dot"></i>fait..<br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <h4 style="color: rgba(105, 210, 213, 0.868)" style="margin-left: 80px"> <b>2. Les outils et logiciels utilisés dans l'entreprise et dont certains ont été mis à ma disposition lors du stage</b></h4> <br>
+
+        <p style="margin-left: 100px" align="justify">
+          <span class="alinea-text">J'ai</span> pu découvrir les différents logiciels et applications durant mon stage dans le service que j’ai
+          intégré au sein de l'entreprise NETCELER et apprendre comment il fonctionne. Les
+          fonctionnalités de chacun d’entre eux sont très spécifiques et répondent à des besoins
+          précis en fonction du service et des clients.
+        </p>
+
+        <div class="container services">
+          <div class="section-title">
+            <br><br>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+                <p align="justify" ><i class="icofont-rounded-right"></i><i style="text-decoration: underline"><b>Logiciels :</b></i><br><br></p>
+
+                <i class="bi bi-dot"></i>.<br>
+                <i class="bi bi-dot"></i>.<br>
+                <i class="bi bi-dot"></i>.<br>
+                <i class="bi bi-dot"></i>.<br>
+                <i class="bi bi-dot"></i>.<br>
+
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                <p align="justify" > <i class="icofont-rounded-right"></i><i style="text-decoration: underline"><b>Applications :</b></i><br><br></p>
+                <i class="bi bi-dot"></i>.<br>
+                <i class="bi bi-dot"></i>.<br>
+                <i class="bi bi-dot"></i>.<br>
+                <i class="bi bi-dot"></i>.<br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Stage Section -->
+
+  <!-- ======= Missions Section ======= -->
+  <section style="height: 1520px" id="missions">
+    <div class="content-block">
+      <div class="section-title">
+        <h2>Les Missions et Activités professionnelles effectuées</h2>
+        <div class="pt-4 pt-lg-0 content" data-aos="fade-left">
+          <br>
+          <h3 style="color: rgba(105, 210, 213, 0.868);"><b><span class="alinea-text">A - Les missions et activités effectuées au cours de mon stage en 1<sup>re</sup> année de BTS (2024)</span></b></h3><br>
+          <p style="margin-left: 50px" align="justify">
+            <span class="alinea-text">Les</span> missions réalisées au cours de mon premier stage au sein de l'entreprise NETCELER ont été
+            enrichissente, ce qui a rendu cette expérience particulièrement intéressante.
+            Pour des raisons de confidentialité, je ne suis pas en mesure de pouvoir
+            fournir des photos des missions réalisées lors de mon stage.
+            <br><br>
+            Je vous invite à découvrir ci-dessous les différentes missions et activités réalisées :
+          </p>
+          <br>
+
+
+          <div class="content-block">
+            <div class="row skills-content">
+
+              <!-- 1 - Mission n°1-->
+
+              <div style="z-index: 3" class="col-lg-6 " data-aos="fade-right">
+                <br>
+                <div class="wrapper">
+                  <div class="col_third">
+                    <div style="width: 380px; height: 300px; " class="hover panel">
+                      <div style="padding-left: 50px" class="front">
+                        <div class="box1">
+                          <h4><i class="icofont-network"></i><b> Mission n°1</b></h4>
+                          <img src="lien img" alt="image">
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div style="height: 380px" class="box2">
+                          <h4 style="text-align: center"><i class="icofont-network"></i><b>Mise à jour simulateur</b> </h4>
+                          <br>
+                          <h6 align="justify">
+                            <span class="alinea-text">Ma </span> première mission a été de mettre à jour un simulateur d'une caméra thérmique d'un parking<br>
+                            </h6>
+                          <br>
+                          <h6 style="text-decoration: underline; font-weight: bold">- La procédure de mise à jour du simulateur</h6>
+                          <br>
+                          <ul style="text-align: left">
+                            <i class="icofont-rounded-right"></i>Etude de code<br>
+                            <i class="icofont-rounded-right"></i>Lecture de documentation (clients et autres)<br>
+                            <i class="icofont-rounded-right"></i>Visionnage de tutoriels pour les points découvertes<br>
+                            <i class="icofont-rounded-right"></i>Discussion compréhension avec une personne de l'entreprise<br>
+                            <i class="icofont-rounded-right"></i>Phase de test <br>
+                            <i class="icofont-rounded-right"></i>Relecture du code par plusieurs dev<br>
+                            <i class="icofont-rounded-right"></i>Publication dans le cloud <br>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1 - Mission n°2-->
+
+              <div style="width: 500px;z-index: 3" class="col-lg-6 " data-aos="fade-left">
+                <br>
+                <div class="wrapper">
+                  <div class="col_third">
+                    <div style="width: 480px;height: 300px;" class="hover panel">
+                      <div class="front">
+                        <div class="box1">
+                          <h4><i class="icofont-network"></i><b> Mission n°2</b></h4>
+                          <img style="height: 230px;width: 410px" src="../portfolio/img/missions/switch.png" alt="image">
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div style="height: 370px; width: 560px; border-radius: 10px" class="box2">
+                          <h4  style="text-align: center"><i class="icofont-network"></i><b>Simulateur en base de données</b> </h4>
+                          <br>
+                          <h6 align="justify">
+                            <span class="alinea-text">Au </span> cours de ma seconde mission j'ai pu la réaliser à l'aide d'une personne de l'entreprise qui ma guidé au long de la mission <br><br>
+                            <ul style="text-align: left">
+                              <h6><b><u>- Ce que j'ai appris où améliorer dans mes conaissances : </u></b></h6><br>
+                              <i class="icofont-rounded-right"></i>Utilisation de SpringBoot<br>
+                              <i class="icofont-rounded-right"></i>Utilisation d'une base de données(BDD) dans springBoot<br>
+                              <i class="icofont-rounded-right"></i>language Java et Java framework<br>
+                              <i class="icofont-rounded-right"></i>autres<br>
+                              <i class="icofont-rounded-right"></i>autres<br>
+                            </ul>
+                          </h6>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  <!-- Stage n°2 - Name -->
+
+
+  <div class="pt-4 pt-lg-0 content" data-aos="fade-left">
+    <br>
+    <h3 style="color: rgba(105, 210, 213, 0.868);"><b><span class="alinea-text">B - Les missions et activités effectuées au cours de mon stage en 2<sup>ème</sup> année de BTS (2025)</span></b></h3><br>
+    <p style="margin-left: 50px" align="justify">
+      <span class="alinea-text">Les</span> missions réalisées au cours de mon second stage au sein de l'entreprise "Name" étaient...
+      <br>
+      Je vous invite à découvrir ci-dessous les différentes missions et activités réalisées :
+    </p>
+    <br>
+    <div class="content-block">
+      <div class="row skills-content">
+
+        <!-- 2 - Mission n°1-->
+
+        <div style="z-index: 4" class="col-lg-6 " data-aos="fade-right">
+          <br>
+          <div class="wrapper">
+            <div class="col_third">
+              <div style="width: 480px;height: 300px; " class="hover panel">
+                <div style="padding-left: 50px" class="front">
+                  <div class="box1">
+                    <h4><i class="icofont-network"></i><b> Mission n°1</b></h4>
+                    <img style="height: 230px;width: 410px" src="lien img" alt="image">
+                  </div>
+                </div>
+                <div class="back">
+                  <div style="height: 340px; width: 550px;border-radius: 10px" class="box2">
+                    <h4  style="text-align: center"><i class="icofont-network"></i><b> Titre</b> </h4>
+                    <br>
+                    <h6 align="justify">
+                      <span class="alinea-text">alinea</span> desc bref
+                    </h6>
+                    <br>
+                    <ul style="text-align: left">
+                      <h6><b><u>- détail : </u></b></h6>
+                      <i class="icofont-rounded-right"></i>truc fait<br>
+                      <i class="icofont-rounded-right"></i>autres<br>
+                      <i class="icofont-rounded-right"></i>autres<br>
+                    </ul>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 - Mission n°2-->
+
+        <div style="width: 500px;z-index: 4" class="col-lg-6 " data-aos="fade-left">
+          <br>
+          <div class="wrapper">
+            <div class="col_third">
+              <div style="width: 480px;height: 300px;" class="hover panel">
+                <div class="front">
+                  <div class="box1">
+                    <h4><i class="icofont-network"></i><b> Mission n°2</b></h4>
+                    <img style="height: 230px;width: 410px" src="lien img" alt="image">
+                  </div>
+                </div>
+                <div class="back">
+                  <div style="height: 340px; width: 550px; border-radius: 10px" class="box2">
+                    <h4  style="text-align: center"><i class="icofont-network"></i><b> Titre :</b> </h4>
+                    <br>
+                    <h6 align="justify">
+                      <span class="alinea-text">alinea </span> desc
+                    </h6>
+                    <br>
+                    <ul style="text-align: left">
+                      <h6><b><u>- détail : </u></b></h6>
+                      <i class="icofont-rounded-right"></i>trucs fait.<br>
+                      <i class="icofont-rounded-right"></i>+.<br>
+                      <i class="icofont-rounded-right"></i>+.<br>
+                    </ul>
+                    <br>
+                    <ul style="text-align: left">
+                      <h6><b><u>- autres? :</u></b></h6>
+                      <i class="icofont-rounded-right"></i>détail.<br>
+                    </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
 </section>
+      <!-- Fin Missions Section -->
+
+    
+  <!-- ======= Conclusion Section ======= -->
+  <section id="conclusion" class="portfolio section-bg">
+    <div class="content-block">
+      <div class="section-title">
+        <h2>Conclusion</h2>
+        <p style="margin-left: 50px" align="justify">
+          <span class="alinea-text">J'ai</span> vraiment appréciée faire ce stage. Il m'a permis de me familiariser avec le travail 
+          et la vie en entreprise pendant 6 semaines. <br><br>
+
+          Au cours de ce stage j’ai tout d’abord eu de vagues informations sur le travail à 
+          fournir et à réaliser en tant que stagiaire, car mon maître de stage était très occupé. 
+          Ensuite, au fil des semaines, j'ai reçu davantage d'informations et d'objectifs à 
+          accomplir avec une autre personne de l'entreprise qui m'a prise en charge.<br><br>
+
+          Mes objectifs étaient : <br>
+          - de mettre à jour un ancien simulateur d’une caméra thermique de sorte qu’il renvoie différentes alertes selon la situation
+          (alerte incendie, alerte au flux de données…) ou encore que la caméra envoie des signes de vie toutes les X 
+          secondes afin de vérifier que tout soit en règle. <br>
+
+          - de parvenir à faire fonctionner le simulateur sur une machine virtuelle (VM). + 
+          mettre le simulateur en bdd (H2).<br><br>
+
+          Pour mener à bien ce projet, j'ai consacré des semaines à effectuer des tests unitaires en interne afin d'explorer les différentes fonctionnalités en fonction des
+          objectifs. J'ai visionné beaucoup de tutoriels et passé beaucoup d'heures avec une personne de l'entreprise qui m'a tout expliqué en utilisant des schémas, pour que 
+          je comprenne mieux.<br><br>
+
+          Grâce à ce stage, j'ai pu améliorer mes compétences, en particulier en JAVA et en framework Java. J'ai eu l'opportunité de découvrir de nombreux logiciels
+          et applications utilisés dans l'entreprise(comme : docker, podman, postman, jira, bitbucket, spring boot et bien d’autres…), 
+          j'ai appris à les manipuler et à les utiliser efficacement. De plus, j'ai découvert de nombreuses fonctionnalités sur Intellij en l'utilisant durant toutes ces semaines.  <br><br>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Conclusion Section -->
+
+
+  <!-- ======= Annexes Section ======= -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  
+  <div class="content-block">
+    <div class="section-title">
+      <h2>Annexes</h2>
+
+      <div style="pointer-events: none" class="container-btn">
+        <link rel="stylesheet" href="../css/btn-download.css">
+
+      <a id="btn_1" class="button dark disabled">
+        <ul>
+          <li>Mes notes de stage </li>
+          <li>Téléchargement</li>
+          <li>Ouvrez le document</li>
+        </ul>
+        <div>
+          <svg viewBox="0 0 24 24"></svg>
+        </div>
+      </a>
+      <i class="bi bi-lock-fill fs-3"></i>
+    </div>
+    
+    <div style="pointer-events: none" class="container-btn">
+        <link rel="stylesheet" href="../css/btn-download.css">
+
+        <a id="btn_2" class="button dark">
+          <ul>
+            <li>Attestation de stage n°1 (2024)</li>
+            <li>Téléchargement</li>
+            <li>Ouvrez le document</li>
+          </ul>
+          <div>
+            <svg viewBox="0 0 24 24"></svg>
+          </div>
+        </a>
+        <i class="bi bi-lock-fill fs-3"></i>
+      </div>
+      
+      <div style="pointer-events: none" class="container-btn">
+        <link rel="stylesheet" href="../css/btn-download.css">
+
+      <a id="btn_3" class="button dark">
+        <ul>
+          <li>Attestation de stage n°2 (2025)</li>
+          <li>Téléchargement</li>
+          <li>Ouvrez le document</li>
+        </ul>
+        <div>
+          <svg viewBox="0 0 24 24"></svg>
+        </div>
+      </a>
+        <i class="bi bi-lock-fill fs-3"></i>
+    </div>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/swipper-bundle.min.js"></script>
+    <script  src="../js/btn-download.js"></script>
+  </div>
+</div>
+</section>
+<!-- Fin Annexes Section -->
+
+
+</main>
+<!-- End #main -->
+
 <!-- -------------------------------------------------------------
 # Bas de page
 -------------------------------------------------------------- -->
 
 <footer class="content-block">
-    <p>&copy; 2024 Portfolio de BLANC Mathilda</p>
+<p>&copy; 2024 Portfolio de BLANC Mathilda</p>
+<div class="credits">
+    Tous droits réservés
+  </div>
 </footer>
 
 </body>

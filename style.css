@@ -1,4 +1,4 @@
- /* -----------------------------------------------
+/* -----------------------------------------------
 # Porfolio3.0 
 # Crée le 09/04/2024 par Blanc Mathilda
 # Code css <style>
@@ -7,151 +7,439 @@
 /*--------------------------------------------------------------
 # Corp du site
 --------------------------------------------------------------*/
- body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url(https://cdnb.artstation.com/p/assets/images/images/052/004/767/original/yurii-ray-06-gif-export-200.gif?1658731969);
-            background-position: center;
-            background-size: cover;
-            background-position: center;
-            color: white;
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/052/004/767/original/yurii-ray-06-gif-export-200.gif?1658731969);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
 /*--------------------------------------------------------------
 # Tête, haut de page
 --------------------------------------------------------------*/ 
-        header {
-            background-color: transparent; /* Arrière-plan transparent pour le header */
-            color: #fff; /* Texte en blanc */
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        /* Mot qui défile */
-        marquee{
-            color: white;
-        }
-       
+header {
+    background-color: transparent; /* Arrière-plan transparent pour le header */
+    color: #fff; /* Texte en blanc */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Mot qui défile */
+marquee{
+    color: white;
+}
+
 /*--------------------------------------------------------------
 # Taille titre
 --------------------------------------------------------------*/
-        h1 {
-            margin: 0 auto;
-        }
-        h2 {
-            color: rgba(105, 210, 213, 0.868);
-            text-decoration: underline;
-        }
+h1 {
+    margin: 0 auto;
+}
+h2 {
+    color: rgba(105, 210, 213, 0.868);
+    text-decoration: underline;
+}
 /*--------------------------------------------------------------
 # Animation titre
 --------------------------------------------------------------*/
 .text-animation {
-    font-weight: bold;
-    color: white;
-    overflow: hidden; /* Cache les lettres supplémentaires */
-    white-space: nowrap; /* Empêche le saut de ligne */
-    border-right: 2px solid transparent; /* Fait comme si le texte était écrit au fur et à mesure */
-    animation: animate-text 10s steps(10, end) infinite; /* Durée de l'animation et nombre d'étapes */
-    text-shadow:1px 1px 2px black,0 0 1em blue,0 0 0.2em blue;color: white;font:1.5em Georgia,serif; /* Effet d'ombre */
+font-weight: bold;
+color: white;
+overflow: hidden; /* Cache les lettres supplémentaires */
+white-space: nowrap; /* Empêche le saut de ligne */
+border-right: 2px solid transparent; /* Fait comme si le texte était écrit au fur et à mesure */
+animation: animate-text 10s steps(10, end) infinite; /* Durée de l'animation et nombre d'étapes */
+text-shadow:1px 1px 2px black,0 0 1em blue,0 0 0.2em blue;color: white;font:1.5em Georgia,serif; /* Effet d'ombre */
 }
 
 @keyframes animate-text {
-    0% {
-        width: 0; /* Début de l'animation : pas de texte affiché */
-        border-right: 2px solid transparent; /* Pas de texte visible */
-    }
-    10% {
-        width: 10%; /* Affichage de la première lettre */
-        border-right: 2px solid transparent; /* Pas de texte visible */
-    }
-    20% {
-        width: 20%; /* Affichage des deux premières lettres */
-        border-right: 2px solid transparent; /* Pas de texte visible */
-    }
-    30% {
-        width: 30%; /* Affichage des trois premières lettres */
-        border-right: 2px solid transparent; /* Pas de texte visible */
-    }
-    40% {
-        width: 40%; /* Affichage des quatre premières lettres */
-        border-right: 2px solid transparent; /* Pas de texte visible */
-    }
-    50% {
-        width: 50%; /* Affichage des cinq premières lettres */
-        border-right: 2px solid transparent; /* Pas de texte visible */
-    }
-    60% {
-        width: 60%; /* Affichage des six premières lettres */
-        border-right: 2px solid transparent; /* Pas de texte visible */
-    }
-    70% {
-        width: 70%; /* Affichage des sept premières lettres */
-        border-right: 2px solid transparent; /* Pas de texte visible */
-    }
-    80% {
-        width: 80%; /* Affichage des huit premières lettres */
-        border-right: 2px solid transparent; /* Pas de texte visible */
-    }
-    90% {
-        width: 90%; /* Affichage des neuf premières lettres */
-        border-right: 2px solid transparent; /* Pas de texte visible */
-    }
-    100% {
-        width: 100%; /* Fin de l'animation : texte complètement affiché */
-        border-right: 2px solid transparent; /* Pas de texte visible */
-    }
+0% {
+width: 0; /* Début de l'animation : pas de texte affiché */
+border-right: 2px solid transparent; /* Pas de texte visible */
+}
+10% {
+width: 10%; /* Affichage de la première lettre */
+border-right: 2px solid transparent; /* Pas de texte visible */
+}
+20% {
+width: 20%; /* Affichage des deux premières lettres */
+border-right: 2px solid transparent; /* Pas de texte visible */
+}
+30% {
+width: 30%; /* Affichage des trois premières lettres */
+border-right: 2px solid transparent; /* Pas de texte visible */
+}
+40% {
+width: 40%; /* Affichage des quatre premières lettres */
+border-right: 2px solid transparent; /* Pas de texte visible */
+}
+50% {
+width: 50%; /* Affichage des cinq premières lettres */
+border-right: 2px solid transparent; /* Pas de texte visible */
+}
+60% {
+width: 60%; /* Affichage des six premières lettres */
+border-right: 2px solid transparent; /* Pas de texte visible */
+}
+70% {
+width: 70%; /* Affichage des sept premières lettres */
+border-right: 2px solid transparent; /* Pas de texte visible */
+}
+80% {
+width: 80%; /* Affichage des huit premières lettres */
+border-right: 2px solid transparent; /* Pas de texte visible */
+}
+90% {
+width: 90%; /* Affichage des neuf premières lettres */
+border-right: 2px solid transparent; /* Pas de texte visible */
+}
+100% {
+width: 100%; /* Fin de l'animation : texte complètement affiché */
+border-right: 2px solid transparent; /* Pas de texte visible */
+}
 }      
 /*--------------------------------------------------------------
 # Menu
 --------------------------------------------------------------*/
-        nav {
-            background-color: transparent; /* Arrière-plan transparent pour la navigation */
-            color: #fff; /* Texte en blanc */
-            text-align: center;
-            padding: 10px;
-            position: relative;
-        }
-        nav a {
-            color: #fff; /* Texte en blanc */
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 5px;
-        }  
-    
+nav {
+    background-color: transparent; /* Arrière-plan transparent pour la navigation */
+    color: #fff; /* Texte en blanc */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+nav a {
+    color: #fff; /* Texte en blanc */
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+}  
+  /* Mobile Navigation */
+  .mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    background-color: #149ddd;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+  
+  .mobile-nav-active #header {
+    left: 0;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+  
+  .sub-menu.active {
+    display: block;
+  }
+  
+  /* Ajoutez ces styles pour ajuster le padding en fonction de l'état du sous-menu */
+  .nav-menu.submenu-open {
+    padding-bottom: 120px !important;
+  }
 /*--------------------------------------------------------------
 # Logo
 --------------------------------------------------------------*/
-        .logo {
-            width: 100px; /* Ajuster la taille du logo au besoin */
-            height: auto;
-            margin-right: 20px;
-        }
-        @media only screen and (max-width: 600px) {
-            .logo {
-                width: 70px; /* Réduire la taille du logo sur les petits écrans */
-            }
-        }
+.logo {
+    width: 100px; /* Ajuster la taille du logo au besoin */
+    height: auto;
+    margin-right: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 70px; /* Réduire la taille du logo sur les petits écrans */
+    }
+}
 /*--------------------------------------------------------------
 # Image
 --------------------------------------------------------------*/
 img {
-    width: 150px;
-    height: 150px;
-  }
+width: 150px;
+height: 150px;
+}
+
 /*--------------------------------------------------------------
 # Section
 --------------------------------------------------------------*/
-section {
-    padding: 20px;
-}
+
 /* Block */
 .content-block {
-    background-color: #000000ad;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+background-color: #000000ad;
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+}
+
+.content-block a {
+  text-decoration: none;
+  color: white; /* Couleur de texte par défaut */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.content-block a:hover {
+  color: rgba(105, 210, 213, 0.868); /* Couleur du texte au survol */
+}
+/*--------------------------------------------------------------
+# Présentation
+--------------------------------------------------------------*/
+.article-card-large {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(0 5px 15px rgba(0, 0, 0, .24));
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, .24));
+}
+
+.article-thumbnail-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.article-thumbnail-wrap img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+}
+
+.article-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.article-article h1 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.card-content p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.author-row {
+  display: flex;
+  align-items: center;
+}
+
+.author-row img {
+  margin-right: 10px;
+}
+
+.author-row .author-name {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.author-row .author-name:hover {
+  text-decoration: underline;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# Flip box effect (BTS)
+--------------------------------------------------------------*/
+
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+  position: relative;
+  display: inline-block;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+
+
+.wrapper{ margin: 0 auto; }
+
+.panel {
+  margin: 0 auto;
+  height: 130px;
+  position: relative;
+  transform-origin: center center;
+}
+
+.panel .front,
+.panel .back {
+  text-align: center;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+.panel .front {
+  height: inherit;
+  position: absolute;
+  top: 0;
+  z-index: 900;
+  text-align: center;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.panel .back {
+  height: inherit;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.panel.flip .front {
+  z-index: 900;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+.panel.flip .back {
+  z-index: 1000;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+.panel:hover {
+  cursor: pointer;
+}
+
+.box1 {
+  background-image: linear-gradient(to top, rgba(26, 39, 47, 0.78), rgb(31, 55, 58));
+  width: 450px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box1 img {
+  flex-grow: 1;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+}
+.box2{
+  background-image: linear-gradient(-20deg, #3b4e4b 0%, #895c9b 100%);
+  width: 530px;
+  height: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  position: relative;
+  z-index: 100;
+}
+
+.hover {
+  position: relative;
+  perspective: 10000px;
+  transform-style: preserve-3d;
+
+}
+
+.hover .front,
+.hover .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.hover .back {
+  transform: rotateY(180deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.hover:hover .front {
+  transform: rotateY(-180deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.hover:hover .back {
+  transform: rotateY(0deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.hover::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Ajustez ces valeurs pour agrandir la zone de hover */
+  right: -20px;
+  bottom: -10px;
+  left: -10px;
+}
+
+.second-row .box1-row2 {
+  position: relative;
+  z-index: 1;
+}
+
+.second-row .box2-row2 {
+  position: relative;
+  z-index: 2;
 }
 
 /*--------------------------------------------------------------
@@ -162,28 +450,306 @@ section {
 */
 
 #SkillBox {
-    font-size: 20px;
-    font-family: 'Indie Flower', cursive;
-    width: 65%;
-    height: auto;
-    margin: 40px auto;
-    background-color: #ffffff7c;
-    border: 1px solid #cdcdcd;
-    padding: 10px;
-    border-radius:20px; 
-    right: 20px;
+font-size: 20px;
+font-family: 'Indie Flower', cursive;
+width: 65%;
+height: auto;
+margin: 40px auto;
+background-color: #ffffff7c;
+border: 1px solid #cdcdcd;
+padding: 10px;
+border-radius:20px; 
+right: 20px;
 }
 
 .SkillBar {
-    width: 90%;
-    height: 50px;
-    position: relative;
-    background: rgba(17, 17, 17, .3);
-    margin: 20px auto;
+width: 90%;
+height: 50px;
+position: relative;
+background: rgba(17, 17, 17, .3);
+margin: 20px auto;
 }
 /* Animation html */
 #Skill-HTML {
-    width: 40%;
+width: 60%;
+animation: Animate-HTML 4s;
+-webkit-animation: Animate-HTML 4s;
+-moz-animation: Animate-HTML 4s;
+-o-animation: Animate-HTML 4s;
+height: 50px;
+position: absolute;
+background-color: #ea8564;
+}
+@keyframes Animate-HTML {
+from {
+width: 10px;
+}
+to {
+width: 60%}
+}@-webkit-keyframes Animate-HTML {
+from {
+width: 10px;
+}
+to {
+width: 60%}
+}@-moz-keyframes Animate-HTML {
+from {
+width: 10px;
+}
+to {
+width: 60%}
+}@-o-keyframes Animate-HTML {
+from {
+width: 10px;
+}
+to {
+width: 60%}
+}
+/* Animation css */
+#Skill-CSS {
+animation: Animate-CSS 5s;
+-webkit-animation: Animate-CSS 5s;
+-moz-animation: Animate-CSS 5s;
+-o-animation: Animate-CSS 5s;
+width: 50%;
+height: 50px;
+position: absolute;
+background-color: #55a69f;
+}
+@keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 50%}
+}@-webkit-keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 50%}
+}@-moz-keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 50%}
+}@-o-keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 50%}
+
+}
+/* Animation JS */
+#Skill-JS {
+animation: Animate-JS 4s;
+-webkit-animation: Animate-JS 4s;
+-moz-animation: Animate-JS 4s;
+-o-animation: Animate-JS 4s;
+width: 0%;
+height: 50px;
+position: absolute;
+background-color: #c44e45;
+}
+@keyframes Animate-JS {
+from {
+width: 10px;
+}
+to {
+width: 0%}
+}@-webkit-keyframes Animate-JS {
+from {
+width: 10px;
+}
+to {
+width: 0%}
+}@-moz-keyframes Animate-JS {
+from {
+width: 10px;
+}
+to {
+width: 0%}
+}@-o-keyframes Animate-JS {
+from {
+width: 10px;
+}
+to {
+width: 0%}
+
+}
+/* Animation Python */
+#Skill-Python {
+animation: Animate-Python 4s;
+-webkit-animation: Animate-Python 4s;
+-moz-animation: Animate-Python 4s;
+-o-animation: Animate-Python 4s;
+width: 15%;
+height: 50px;
+position: absolute;
+background-color: #970cc1;
+}
+@keyframes Animate-Python {
+from {
+width: 10px;
+}
+to {
+width: 15%}
+}@-webkit-keyframes Animate-Python {
+from {
+width: 10px;
+}
+to {
+width: 15%}
+}@-moz-keyframes Animate-Python {
+from {
+width: 10px;
+}
+to {
+width: 15%}
+}@-o-keyframes Animate-Python {
+from {
+width: 10px;
+}
+to {
+width: 15%}
+}
+/* Animation JAVA */
+#Skill-JAVA {
+animation: Animate-JAVA 4s;
+-webkit-animation: Animate-JAVA 4s;
+-moz-animation: Animate-JAVA 4s;
+-o-animation: Animate-JAVA 4s;
+width: 50%;
+height: 50px;
+position: absolute;
+background-color: #8e930c;
+}
+@keyframes Animate-JAVA {
+from {
+width: 10px;
+}
+to {
+width: 50%}
+}@-webkit-keyframes Animate-JAVA {
+from {
+width: 10px;
+}
+to {
+width: 50%}
+}@-moz-keyframes Animate-JAVA {
+from {
+width: 10px;
+}
+to {
+width: 50%}
+}@-o-keyframes Animate-JAVA {
+from {
+width: 10px;
+}
+to {
+width: 50%}
+}
+/* Animation PHP */
+#Skill-PHP {
+animation: Animate-PHP 4s;
+-webkit-animation: Animate-PHP 4s;
+-moz-animation: Animate-PHP 4s;
+-o-animation: Animate-PHP 4s;
+width: 20%;
+height: 50px;
+position: absolute;
+background-color: #5A69A6;
+}
+@keyframes Animate-PHP {
+from {
+width: 10px;
+}
+to {
+width: 20%}
+}@-webkit-keyframes Animate-PHP {
+from {
+width: 10px;
+}
+to {
+width: 20%}
+}@-moz-keyframes Animate-PHP {
+from {
+width: 10px;
+}
+to {
+width: 20%}
+}@-o-keyframes Animate-PHP {
+from {
+width: 10px;
+}
+to {
+width: 20%}
+}
+/* Animation SQL */
+#Skill-SQL {
+animation: Animate-SQL 4s;
+-webkit-animation: Animate-SQL 4s;
+-moz-animation: Animate-SQL 4s;
+-o-animation: Animate-SQL 4s;
+width: 15%;
+height: 50px;
+position: absolute;
+background-color: #23b1db;
+}
+@keyframes Animate-SQL {
+from {
+width: 10px;
+}
+to {
+width: 15%}
+}@-webkit-keyframes Animate-SQL {
+from {
+width: 10px;
+}
+to {
+width: 15%}
+}@-moz-keyframes Animate-SQL {
+from {
+width: 10px;
+}
+to {
+width: 15%}
+}@-o-keyframes Animate-SQL {
+from {
+width: 10px;
+}
+to {
+width: 15%}
+
+}.Skill-Area {
+z-index: 1;
+float: left;
+position: absolute;
+margin-top: 15px;
+margin-left: 5px;
+text-shadow: none;
+color: #fff;
+font-family: Lato-Regular, sans-serif;
+font-size: 18px;
+}
+.PercentText {
+z-index: 3;
+position: relative;
+padding-right: 5px;
+margin-top: 15px;
+float: right;
+text-shadow: none;
+color: #fff;
+font-family: Lato-Regular, sans-serif;
+font-size: 18px;
+}
+/*--------------------------------------------------------------
+# Logiciels 
+--------------------------------------------------------------*/
+#Skill-VScode {
+    width: 70%;
     animation: Animate-HTML 4s;
     -webkit-animation: Animate-HTML 4s;
     -moz-animation: Animate-HTML 4s;
@@ -191,317 +757,184 @@ section {
     height: 50px;
     position: absolute;
     background-color: #ea8564;
-}
-@keyframes Animate-HTML {
+    }
+    @keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 40%}
-}@-webkit-keyframes Animate-HTML {
+    }
+    to {
+    width: 70%}
+    }@-webkit-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 40%}
-}@-moz-keyframes Animate-HTML {
+    }
+    to {
+    width: 70%}
+    }@-moz-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 40%}
-}@-o-keyframes Animate-HTML {
+    }
+    to {
+    width: 70%}
+    }@-o-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 40%}
-}
-/* Animation css */
-#Skill-CSS {
-    animation: Animate-CSS 5s;
-    -webkit-animation: Animate-CSS 5s;
-    -moz-animation: Animate-CSS 5s;
-    -o-animation: Animate-CSS 5s;
-    width: 30%;
-    height: 50px;
-    position: absolute;
-    background-color: #55a69f;
-}
-@keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
-}@-webkit-keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
-}@-moz-keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
-}@-o-keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
+    }
+    to {
+    width: 70%}
+    }
 
-}
-/* Animation JS */
-#Skill-JS {
-    animation: Animate-JS 4s;
-    -webkit-animation: Animate-JS 4s;
-    -moz-animation: Animate-JS 4s;
-    -o-animation: Animate-JS 4s;
-    width: 0%;
+#Skill-Intellij {
+    width: 50%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
     height: 50px;
     position: absolute;
-    background-color: #c44e45;
-}
-@keyframes Animate-JS {
+    background-color: #a32684;
+    }
+    @keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 0%}
-}@-webkit-keyframes Animate-JS {
+    }
+    to {
+    width: 50%}
+    }@-webkit-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 0%}
-}@-moz-keyframes Animate-JS {
+    }
+    to {
+    width: 50%}
+    }@-moz-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 0%}
-}@-o-keyframes Animate-JS {
+    }
+    to {
+    width: 50%}
+    }@-o-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 0%}
+    }
+    to {
+    width: 50%}
+    }
 
-}
-/* Animation Python */
-#Skill-Python {
-    animation: Animate-Python 4s;
-    -webkit-animation: Animate-Python 4s;
-    -moz-animation: Animate-Python 4s;
-    -o-animation: Animate-Python 4s;
-    width: 15%;
+#Skill-Github {
+    width: 50%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
     height: 50px;
     position: absolute;
-    background-color: #970cc1;
-}
-@keyframes Animate-Python {
+    background-color: #251622;
+    }
+    @keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 15%}
-}@-webkit-keyframes Animate-Python {
+    }
+    to {
+    width: 50%}
+    }@-webkit-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 15%}
-}@-moz-keyframes Animate-Python {
+    }
+    to {
+    width: 50%}
+    }@-moz-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 15%}
-}@-o-keyframes Animate-Python {
+    }
+    to {
+    width: 50%}
+    }@-o-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
-    width: 15%}
-}
-/* Animation JAVA */
-#Skill-JAVA {
-    animation: Animate-JAVA 4s;
-    -webkit-animation: Animate-JAVA 4s;
-    -moz-animation: Animate-JAVA 4s;
-    -o-animation: Animate-JAVA 4s;
+    }
+    to {
+    width: 50%}
+    }
+
+#Skill-Docker {
     width: 25%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
     height: 50px;
     position: absolute;
-    background-color: #8e930c;
-}
-@keyframes Animate-JAVA {
+    background-color: #3684cc;
+    }
+    @keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
+    }
+    to {
     width: 25%}
-}@-webkit-keyframes Animate-JAVA {
+    }@-webkit-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
+    }
+    to {
     width: 25%}
-}@-moz-keyframes Animate-JAVA {
+    }@-moz-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
+    }
+    to {
     width: 25%}
-}@-o-keyframes Animate-JAVA {
+    }@-o-keyframes Animate-HTML {
     from {
     width: 10px;
-}
-to {
+    }
+    to {
     width: 25%}
-}
-/* Animation PHP */
-#Skill-PHP {
-    animation: Animate-PHP 4s;
-    -webkit-animation: Animate-PHP 4s;
-    -moz-animation: Animate-PHP 4s;
-    -o-animation: Animate-PHP 4s;
-    width: 20%;
-    height: 50px;
-    position: absolute;
-    background-color: #5A69A6;
-}
-@keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 20%}
-}@-webkit-keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 20%}
-}@-moz-keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 20%}
-}@-o-keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 20%}
-}
-/* Animation SQL */
-#Skill-SQL {
-    animation: Animate-SQL 4s;
-    -webkit-animation: Animate-SQL 4s;
-    -moz-animation: Animate-SQL 4s;
-    -o-animation: Animate-SQL 4s;
-    width: 15%;
-    height: 50px;
-    position: absolute;
-    background-color: #23b1db;
-}
-@keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 15%}
-}@-webkit-keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 15%}
-}@-moz-keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 15%}
-}@-o-keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 15%}
-
-}.Skill-Area {
-    z-index: 1;
-    float: left;
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 5px;
-    text-shadow: none;
-    color: #fff;
-    font-family: Lato-Regular, sans-serif;
-    font-size: 18px;
-}
-.PercentText {
-    z-index: 3;
-    position: relative;
-    padding-right: 5px;
-    margin-top: 15px;
-    float: right;
-    text-shadow: none;
-    color: #fff;
-    font-family: Lato-Regular, sans-serif;
-    font-size: 18px;
-}
+    }
 /*--------------------------------------------------------------
 # Contact 
 --------------------------------------------------------------*/
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f24e;
-    padding: 20px;
-  }
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */ 
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+background-color: #04AA6D;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+border-radius: 5px;
+padding: 10px;
+}
 
 /*--------------------------------------------------------------
 # Bas de page
 --------------------------------------------------------------*/
 footer {
-    background-color: transparent; /* Arrière-plan transparent pour le footer */
-    color: #fff; /* Texte en blanc */
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
+background-color: transparent; /* Arrière-plan transparent pour le footer */
+color: #fff; /* Texte en blanc */
+text-align: center;
+padding: 10px;
+bottom: 0;
 } 
