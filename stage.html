@@ -613,7 +613,17 @@
       </a>
       <i class="bi bi-lock-fill fs-3"></i>
     </div>
-    
+      
+    <script>
+  document.getElementById('btn_1').addEventListener('click', function(event) {
+    event.preventDefault();
+    let downloadLink = document.createElement('a');
+    downloadLink.href = '../html/BLANC_Rapport_de_stage.pdf';
+    downloadLink.download = 'BLANC_Rapport_de_stage.pdf';
+    downloadLink.click();
+  });
+</script>
+      
     <div style="pointer-events: none" class="container-btn">
         <link rel="stylesheet" href="../css/btn-download.css">
 
