@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../style.css">
-<link rel="stylesheet" href="../swiper-bundle.min.css">
-<link rel="stylesheet" href="../stage.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+<link rel="stylesheet" href="../css/stage.css">
 
-<link rel="stylesheet" href="../index.html">
-<link rel="stylesheet" href="../contact.html">
-<link rel="stylesheet" href="../projet.html">
-<link rel="stylesheet" href="../competence.html">
-<link rel="stylesheet" href="../stage.html">
+<link rel="stylesheet" href="../html/index.html">
+<link rel="stylesheet" href="../html/contact.html">
+<link rel="stylesheet" href="../html/projet.html">
+<link rel="stylesheet" href="../html/competence.html">
+<link rel="stylesheet" href="../html/stage.html">
 <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 <title>Portfolio BTS SIO SLAM | BLANC Mathilda</title> 
 </head>
@@ -24,12 +24,12 @@
 </header>
 
 <nav class="content-block">
-    <a href="../index.html"><i class='bx bxs-user-pin'></i> Présentation</a>
-    <a href="../projet.html"><i class='bx bx-briefcase-alt-2'></i> Projets</a>
-    <a href="../stage.html"><i class='bx bxs-building-house'></i> Stages</a>
-    <a href="../veille.html"><i class='bx bxs-devices'></i> Veille</a>
-    <a href="../competence.html"><i class='bx bxs-bar-chart-alt-2'></i> Compétences</a>
-    <a href="../contact.html"><i class='bx bx-message-dots'></i> Contact</a>
+    <a href="../html/index.html"><i class='bx bxs-user-pin'></i> Présentation</a>
+    <a href="../html/projet.html"><i class='bx bx-briefcase-alt-2'></i> Projets</a>
+    <a href="../html/stage.html"><i class='bx bxs-building-house'></i> Stages</a>
+    <a href="../html/veille.html"><i class='bx bxs-devices'></i> Veille</a>
+    <a href="../html/competence.html"><i class='bx bxs-bar-chart-alt-2'></i> Compétences</a>
+    <a href="../html/contact.html"><i class='bx bx-message-dots'></i> Contact</a>
     </nav>
 
 <!-- -------------------------------------------------------------
@@ -947,7 +947,7 @@
       
           <!-- Bouton pour le Rapport de stage -->
           <div class="container-btn">
-            <a href="../BLANC_Rapport_de_stage.pdf" target="_blank" id="btn_1" class="button dark">
+            <a href="../html/BLANC_Rapport_de_stage.pdf" target="_blank" id="btn_1" class="button dark">
               <ul>
                   <li>Conclusion & rapport de stage</li>
                   <li>Téléchargement</li>
@@ -967,12 +967,12 @@
               // Ajoute un délai de 5 secondes avant d'ouvrir le fichier
               setTimeout(function() {
                 // Ouvre le fichier dans un nouvel onglet
-                let openLink = window.open('../BLANC_Rapport_de_stage.pdf', '_blank');
+                let openLink = window.open('../html/BLANC_Rapport_de_stage.pdf', '_blank');
                 
                 // Forcer le téléchargement après ouverture du nouvel onglet
                 openLink.onload = function() {
                   let downloadLink = document.createElement('a');
-                  downloadLink.href = '../BLANC_Rapport_de_stage.pdf';
+                  downloadLink.href = '../html/BLANC_Rapport_de_stage.pdf';
                   downloadLink.download = 'BLANC_Rapport_de_stage.pdf';
                   downloadLink.click();
                 };
