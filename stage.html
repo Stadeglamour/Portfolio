@@ -614,15 +614,25 @@
       <i class="bi bi-lock-fill fs-3"></i>
     </div>
       
-    <script>
-  document.getElementById('btn_1').addEventListener('click', function(event) {
-    event.preventDefault();
-    let downloadLink = document.createElement('a');
-    downloadLink.href = 'BLANC_Rapport_de_stage.pdf';
-    downloadLink.download = 'BLANC_Rapport_de_stage.pdf';
-    downloadLink.click();
-  });
-</script>
+   <script>
+            document.getElementById('btn_1').addEventListener('click', function(event) {
+              event.preventDefault();
+              
+              // Ajoute un délai de 5 secondes avant d'ouvrir le fichier
+              setTimeout(function() {
+                // Ouvre le fichier dans un nouvel onglet
+                let openLink = window.open('../BLANC_Rapport_de_stage.pdf', '_blank');
+                
+                // Forcer le téléchargement après ouverture du nouvel onglet
+                openLink.onload = function() {
+                  let downloadLink = document.createElement('a');
+                  downloadLink.href = '../BLANC_Rapport_de_stage.pdf';
+                  downloadLink.download = 'BLANC_Rapport_de_stage.pdf';
+                  downloadLink.click();
+                };
+              }, 3000);  // 3000 millisecondes = 3 secondes
+            });
+          </script>
       
     <div style="pointer-events: none" class="container-btn">
         <link rel="stylesheet" href="../css/btn-download.css">
