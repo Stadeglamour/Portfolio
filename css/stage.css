@@ -28,7 +28,7 @@ body {
   h6 {
     font-family: "Raleway", sans-serif;
   }
-  
+
   /*--------------------------------------------------------------
   # Back to top button
   --------------------------------------------------------------*/
@@ -62,6 +62,43 @@ body {
     opacity: 1;
   }
   
+  /*--------------------------------------------------------------
+  # Bouton
+  --------------------------------------------------------------*/
+  .button_slide {
+    display: inline-block;
+    padding: 17px 400px; /* padding pour changer la taille du bouton */
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: black;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px; 
+    transition: all 0.5s ease;
+    color: #fffdfd;
+    text-decoration: none;
+    text-align: center; 
+}
+
+.button_slide:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.button_slide:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+
   /*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
@@ -162,7 +199,7 @@ body {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: #173b6c;
+    color: rgba(105, 210, 213, 0.868);
   }
   
   .section-title h2::after {
@@ -171,7 +208,6 @@ body {
     display: block;
     width: 50px;
     height: 3px;
-    background: #149ddd;
     bottom: 0;
     left: 0;
   }
@@ -187,7 +223,7 @@ body {
   .about .content h3 {
     font-weight: 700;
     font-size: 26px;
-    color: #173b6c;
+    color: rgba(105, 210, 213, 0.868)!important;
   }
   
   .about .content ul {
@@ -584,12 +620,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 54px;
-    height: 54px;
     background: #149ddd;
     border-radius: 50%;
     transition: 0.5s;
-    border: 1px solid #149ddd;
   }
   
   .services .icon i {
@@ -665,12 +698,6 @@ body {
     font-weight: bold;
     margin: 10px 0 5px 0;
     color: #111;
-  }
-  
-  .testimonials .testimonial-item h4 {
-    font-size: 14px;
-    color: #595959;
-    margin: 0;
   }
   
   .testimonials .testimonial-item .quote-icon-left,
@@ -946,7 +973,6 @@ body {
     border-radius: 15px;
   }
   .box2{
-    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
     width: 530px;
     height: 650px;
     margin: 0 auto;

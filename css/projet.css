@@ -222,7 +222,7 @@
   
   .portfolio #portfolio-flters-3 li:hover,
   .portfolio #portfolio-flters-3 li.filter-active {
-    color: #c98a41;
+    color: rgba(105, 210, 213, 0.868);
   }
   
   .portfolio #portfolio-flters-3 li:last-child {

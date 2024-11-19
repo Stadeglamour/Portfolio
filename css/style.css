@@ -194,6 +194,14 @@ margin: 20px;
 border-radius: 10px;
 }
 
+.content-block a {
+  text-decoration: none;
+  color: white; /* Couleur de texte par défaut */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.content-block a:hover {
+  color: rgba(105, 210, 213, 0.868); /* Couleur du texte au survol */
+}
 /*--------------------------------------------------------------
 # Présentation
 --------------------------------------------------------------*/
