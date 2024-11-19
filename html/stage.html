@@ -590,65 +590,94 @@
   <!-- Fin Conclusion Section -->
 
 
-  <!-- ======= Annexes Section ======= -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+ <!-- ======= Annexes Section ======= -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
   
-  <div class="content-block">
-    <div class="section-title">
-      <h2>Annexes</h2>
+ <div class="content-block">
 
-      <div style="pointer-events: none" class="container-btn">
-        <link rel="stylesheet" href="../css/btn-download.css">
+   <div class="section-title">
+       <h2>Annexes</h2>
+     
+         <!-- Bouton pour le Rapport de stage -->
+         <div class="container-btn">
+           <a href="../html/BLANC_Rapport_de_stage.pdf" target="_blank" id="btn_1" class="button dark">
+             <ul>
+                 <li>Conclusion & rapport de stage</li>
+                 <li>Téléchargement</li>
+                 <li>Ouvrez le document</li>
+             </ul>
+             <div>
+                 <svg viewBox="0 0 24 24">
+                     <!-- Icône SVG ou autre contenu -->
+                 </svg>
+             </div>
+         </a>
+         
+         <script>
+           document.getElementById('btn_1').addEventListener('click', function(event) {
+             event.preventDefault();
+             
+             // Ajoute un délai de 5 secondes avant d'ouvrir le fichier
+             setTimeout(function() {
+               // Ouvre le fichier dans un nouvel onglet
+               let openLink = window.open('../html/BLANC_Rapport_de_stage.pdf', '_blank');
+               
+               // Forcer le téléchargement après ouverture du nouvel onglet
+               openLink.onload = function() {
+                 let downloadLink = document.createElement('a');
+                 downloadLink.href = '../html/BLANC_Rapport_de_stage.pdf';
+                 downloadLink.download = 'BLANC_Rapport_de_stage.pdf';
+                 downloadLink.click();
+               };
+             }, 3000);  // 3000 millisecondes = 3 secondes
+           });
+         </script>
+         
+         
 
-      <a id="btn_1" class="button dark disabled">
-        <ul>
-          <li>Mes notes de stage </li>
-          <li>Téléchargement</li>
-          <li>Ouvrez le document</li>
-        </ul>
-        <div>
-          <svg viewBox="0 0 24 24"></svg>
-        </div>
-      </a>
-      <i class="bi bi-lock-fill fs-3"></i>
-    </div>
-    
-    <div style="pointer-events: none" class="container-btn">
-        <link rel="stylesheet" href="../css/btn-download.css">
+   <!-- Bouton pour l'Attestation de stage n°1 (2024) -->
+   <div class="container-btn">
+       <link rel="stylesheet" href="../css/btn-download.css">
+       <a href="../html/Attestation_Stage_2024.pdf" target="_blank" id="btn_2" class="button dark">
+           <ul>
+               <li>Attestation de stage n°1 (2024)</li>
+               <li>Téléchargement</li>
+               <li>Ouvrez le document</li>
+           </ul>
+           <div>
+               <svg viewBox="0 0 24 24">
+                   <!-- Icône SVG ou autre contenu -->
+               </svg>
+           </div>
+       </a>
+       <i class="bi bi-lock-fill fs-3"></i>
+   </div>
 
-        <a id="btn_2" class="button dark">
-          <ul>
-            <li>Attestation de stage n°1 (2024)</li>
-            <li>Téléchargement</li>
-            <li>Ouvrez le document</li>
-          </ul>
-          <div>
-            <svg viewBox="0 0 24 24"></svg>
-          </div>
-        </a>
-        <i class="bi bi-lock-fill fs-3"></i>
-      </div>
-      
-      <div style="pointer-events: none" class="container-btn">
-        <link rel="stylesheet" href="../css/btn-download.css">
+   <!-- Bouton pour l'Attestation de stage n°2 (2025) -->
+   <div class="container-btn">
+       <link rel="stylesheet" href="../css/btn-download.css">
+       <a href="../html/Attestation_Stage_2025.pdf" target="_blank" id="btn_3" class="button dark">
+           <ul>
+               <li>Attestation de stage n°2 (2025)</li>
+               <li>Téléchargement</li>
+               <li>Ouvrez le document</li>
+           </ul>
+           <div>
+               <svg viewBox="0 0 24 24">
+                   <!-- Icône SVG ou autre contenu -->
+               </svg>
+           </div>
+       </a>
+       <i class="bi bi-lock-fill fs-3"></i>
+   </div>
 
-      <a id="btn_3" class="button dark">
-        <ul>
-          <li>Attestation de stage n°2 (2025)</li>
-          <li>Téléchargement</li>
-          <li>Ouvrez le document</li>
-        </ul>
-        <div>
-          <svg viewBox="0 0 24 24"></svg>
-        </div>
-      </a>
-        <i class="bi bi-lock-fill fs-3"></i>
-    </div>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/js/swipper-bundle.min.js"></script>
-    <script  src="../js/btn-download.js"></script>
-  </div>
+</div>
+
+   <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="/js/swipper-bundle.min.js"></script>
+   <script  src="../js/btn-download.js"></script>
+ </div>
 </div>
 </section>
 <!-- Fin Annexes Section -->
