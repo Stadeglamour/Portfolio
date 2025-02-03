@@ -21,19 +21,26 @@ body {
 # Tête, haut de page
 --------------------------------------------------------------*/ 
 header {
-    background-color: transparent; /* Arrière-plan transparent pour le header */
-    color: #fff; /* Texte en blanc */
+    background-color: transparent; 
+    color: #fff; 
     padding: 20px;
-    text-align: center;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 /* Mot qui défile */
 marquee{
     color: white;
 }
 
+.menu{
+  background-color:  #000000ad;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+}
 /*--------------------------------------------------------------
 # Taille titre
 --------------------------------------------------------------*/
@@ -48,61 +55,32 @@ h2 {
 # Animation titre
 --------------------------------------------------------------*/
 .text-animation {
-font-weight: bold;
-color: white;
-overflow: hidden; /* Cache les lettres supplémentaires */
-white-space: nowrap; /* Empêche le saut de ligne */
-border-right: 2px solid transparent; /* Fait comme si le texte était écrit au fur et à mesure */
-animation: animate-text 10s steps(10, end) infinite; /* Durée de l'animation et nombre d'étapes */
-text-shadow:1px 1px 2px black,0 0 1em blue,0 0 0.2em blue;color: white;font:1.5em Georgia,serif; /* Effet d'ombre */
+  font-weight: bold;
+  color: white;
+  overflow: hidden; 
+  white-space: nowrap; 
+  background-color: #000000ad;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 15px 200px;
+  
+  position: absolute; 
+  top: 50px; /* Ajuste selon ton design */
+  left: 50%; /* Centre horizontalement */
+  transform: translateX(100vw); /* Démarre hors écran à droite */
+
+  animation: slide-in 5s ease-out forwards;
 }
 
-@keyframes animate-text {
-0% {
-width: 0; /* Début de l'animation : pas de texte affiché */
-border-right: 2px solid transparent; /* Pas de texte visible */
+@keyframes slide-in {
+  0% {
+      transform: translateX(100vw); /* Départ hors écran */
+  }
+  100% {
+      transform: translateX(-50%); /* Arrive bien centré */
+  }
 }
-10% {
-width: 10%; /* Affichage de la première lettre */
-border-right: 2px solid transparent; /* Pas de texte visible */
-}
-20% {
-width: 20%; /* Affichage des deux premières lettres */
-border-right: 2px solid transparent; /* Pas de texte visible */
-}
-30% {
-width: 30%; /* Affichage des trois premières lettres */
-border-right: 2px solid transparent; /* Pas de texte visible */
-}
-40% {
-width: 40%; /* Affichage des quatre premières lettres */
-border-right: 2px solid transparent; /* Pas de texte visible */
-}
-50% {
-width: 50%; /* Affichage des cinq premières lettres */
-border-right: 2px solid transparent; /* Pas de texte visible */
-}
-60% {
-width: 60%; /* Affichage des six premières lettres */
-border-right: 2px solid transparent; /* Pas de texte visible */
-}
-70% {
-width: 70%; /* Affichage des sept premières lettres */
-border-right: 2px solid transparent; /* Pas de texte visible */
-}
-80% {
-width: 80%; /* Affichage des huit premières lettres */
-border-right: 2px solid transparent; /* Pas de texte visible */
-}
-90% {
-width: 90%; /* Affichage des neuf premières lettres */
-border-right: 2px solid transparent; /* Pas de texte visible */
-}
-100% {
-width: 100%; /* Fin de l'animation : texte complètement affiché */
-border-right: 2px solid transparent; /* Pas de texte visible */
-}
-}      
+
 /*--------------------------------------------------------------
 # Menu
 --------------------------------------------------------------*/
@@ -110,15 +88,15 @@ nav {
     background-color: transparent; /* Arrière-plan transparent pour la navigation */
     color: #fff; /* Texte en blanc */
     text-align: center;
-    padding: 10px;
     position: relative;
 }
 nav a {
     color: #fff; /* Texte en blanc */
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
     margin: 0 5px;
-}  
+}
+
   /* Mobile Navigation */
   .mobile-nav-toggle {
     position: fixed;
@@ -165,9 +143,10 @@ nav a {
 # Logo
 --------------------------------------------------------------*/
 .logo {
-    width: 100px; /* Ajuster la taille du logo au besoin */
-    height: auto;
-    margin-right: 20px;
+  top: 30px; /* Distance par rapport au haut */
+  left: 30px; /* Distance par rapport à la gauche */
+  width: 120px; /* Ajuste la taille du logo */
+  height: auto; /* Garde les proportions */
 }
 @media only screen and (max-width: 600px) {
     .logo {
@@ -189,7 +168,7 @@ height: 150px;
 /* Block */
 .content-block {
 background-color: #000000ad;
-padding: 20px;
+padding: 30px;
 margin: 20px;
 border-radius: 10px;
 }
@@ -202,13 +181,19 @@ border-radius: 10px;
 .content-block a:hover {
   color: rgba(105, 210, 213, 0.868); /* Couleur du texte au survol */
 }
+
+.content-block-presentation{
+  background-color: #000000ad;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+}
 /*--------------------------------------------------------------
 # Présentation
 --------------------------------------------------------------*/
 .article-card-large {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
   border-radius: 8px;
   overflow: hidden;
   -webkit-filter: drop-shadow(0 5px 15px rgba(0, 0, 0, .24));
@@ -237,12 +222,13 @@ border-radius: 10px;
 
 .article-article h1 {
   margin-top: 0;
-  font-size: 1.5rem;
 }
 
-.card-content p {
+.card-content {
   margin-bottom: 10px;
   font-size: 1rem;
+  padding: 30px;
+  font-size: 20px;
 }
 
 .author-row {
@@ -379,8 +365,8 @@ border-radius: 10px;
 }
 .box2{
   background-image: linear-gradient(-20deg, #3b4e4b 0%, #895c9b 100%);
-  width: 530px;
-  height: 650px;
+  width: 450px;
+  height: 550px;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;

@@ -10,13 +10,8 @@
 # Gros article
 --------------------------------------------------------------*/
 
-.article-card-large {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
 .article-card {
-  border-radius: 8px;
+  border-radius: 10px;
   color: white;
   position: relative;
   z-index: 1;
@@ -404,7 +399,7 @@ html {
   margin: 0;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
-  scrollbar-color: #666666 #201c29;
+  scrollbar-color: #666666 #000000;
 
   &::-webkit-scrollbar {
     width: 10px;
@@ -436,7 +431,7 @@ html {
 .mini-card {
   padding: 1.5rem;
   border-radius: 16px;
-  background: #000000ad;
+  background: #000000dd;
   color: #fff;
   display: flex;
   flex-direction: column;
