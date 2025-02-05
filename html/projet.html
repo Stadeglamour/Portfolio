@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/projet.css">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/icofont.min.css">
 
 <link rel="stylesheet" href="../html/index.html">
 <link rel="stylesheet" href="../html/contact.html">
@@ -34,15 +35,6 @@
 <!-- -------------------------------------------------------------
 # Projet
 -------------------------------------------------------------- -->
-<section id="projets" class="content-block">
-<h2>Projets</h2>
-<p> M2L </p>
-<p>Description :<br> Ce projet à pour objectif de réaliser une interface graphique en java 
-    sur le sujet du sport avec des compétitions, composé de différentes équipes et différents candidats,
-    avec plusieurs possibilités pour chaque (ex: ajout, suppression, modification…). 
-    De plus, nous devons relier tout ça sur une base de données.<br>
-    <br>Langages : Java, JavaFx, MySQL, ...</p>
-</section>
 <!-- ======= Projets Section ======= -->
 <section style="background: linear-gradient(to bottom, #000000ad, #643e61d0);" id="projets" class="content-block">
     <div class="container">
@@ -53,64 +45,110 @@
           <span class="alinea-text">Ci-dessous</span> vous retrouverez tous mes projets réalisés au cours de mon parcours de formation, cliquez sur l'un de mes projets pour en savoir plus !
         </p>
       </div>
-
+      
       <br>
       <section style="border-radius: 15px; background-image: url(portfolio/img/background/background.png); background-size: 100% auto;" class="portfolio section-bg">
         <div class="container">
           <div class="row" data-aos="fade-up">
             <div class="col-lg-12 d-flex justify-content-center cours-complets">
-              <ul style="background: linear-gradient( to top,#040b14, #3a3a3b)" id="portfolio-flters-3">
+              <ul style="background: linear-gradient( to top,#040b14, #3a3a3b)" id="portfolio-flters">
                 <li  data-filter="*" class="filter-active">Tous</li>
-                <li  data-filter=".filter-site">Site Internet</li>
-                <li  data-filter=".filter-helport">Personnel</li>
+                <li  data-filter=".filter-helport">Personnels</li>
                 <li  data-filter=".filter-smartcity">Autres</li>
-
               </ul>
             </div>
           </div>
-          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-site">
-              <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                <img src="projets/img/portfolio.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="projets/img/portfolio.png" class="portfolio-lightbox" title="Conception et réalisation d'un site vitrine Portfolio <br> Conception durant ma formation (2023-2024) "><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                  <a href="projets/projet-portfolio.html">
-                    <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
-                  </a>
-                </div>
-              </div>
-            </div>
 
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <!-- Projet M2L -->
             <div class="col-lg-4 col-md-6 portfolio-item filter-smartcity">
               <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                <img src="projets/img/smartcity.png" class="img-fluid" alt="">
+                <img src="/img/article1.png" class="img-fluid portfolio-img">
+                <div class="hover-title"> Projet M2L</div>
                 <div class="portfolio-links">
-                  <a href="projets/img/smartcity.png" class="portfolio-lightbox" title="Réalisation d'une Smart City sur Cisco Packet Tracer <br> Conception durant ma seconde année de formation (2024)"><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                  <a href="projets/projet-smartcity.html">
+                  <a href="#" class="portfolio-lightbox" onclick="showImage('/img/article1.png'); return false;">
+                    <i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                  <a href="#projetM2L">
                     <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
                   </a>
                 </div>
               </div>
             </div>
+            <div id="imageModal" class="modal"> <!-- Pour afficher l'image en grand -->
+            <span class="close" onclick="closeImage()">&times;</span>
+            <img id="modalImg" class="modal-content" alt="Image en grand">
+            </div>
 
+            <!-- Projet GSB -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-smartcity">
+              <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+                <img src="/img/article2.png" class="img-fluid portfolio-img">
+                <div class="hover-title"> Projet GSB</div>
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-lightbox" onclick="showImage('/img/article2.png'); return false;">
+                    <i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                  <a href="#projetGSB">
+                    <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="imageModal" class="modal"> <!-- Pour afficher l'image en grand -->
+            <span class="close" onclick="closeImage()">&times;</span>
+            <img id="modalImg" class="modal-content" alt="Image en grand">
+            </div>
+
+            <!-- Projet Autres -->
             <div class="col-lg-4 col-md-6 portfolio-item filter-helport">
               <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                <img src="projets/img/helport.png" class="img-fluid" alt="">
+                <img src="/img/article3.png" class="img-fluid portfolio-img">
+                <div class="hover-title"> Projet Autre</div>
                 <div class="portfolio-links">
-                  <a href="projets/img/helport.png" class="portfolio-lightbox" title="Participation à un projet commun entre SISR et SLAM <br> Conception durant ma formation (2023-2024) "><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                  <a href="projets/projet-HelpORT.html">
+                  <a href="#" class="portfolio-lightbox"  onclick="showImage('/img/article3.png'); return false;">
+                    <i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                  <a href="#projetAutres">
                     <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
                   </a>
                 </div>
               </div>
             </div>
-
+            <div id="imageModal" class="modal"> <!-- Pour afficher l'image en grand -->
+            <span class="close" onclick="closeImage()">&times;</span>
+            <img id="modalImg" class="modal-content" alt="Image en grand">
+            </div>
           </div>
         </div>
       </section>
     </div>
   </section>
 
+  <section id="projetM2L" class="content-block">
+    <h2>Description projet M2L</h2><br>
+    <p>Ce projet à pour objectif de réaliser une interface graphique en java 
+        sur le sujet du sport avec des compétitions, composé de différentes équipes et différents candidats,
+        avec plusieurs possibilités pour chaque (ex: ajout, suppression, modification…). 
+        De plus, nous devons relier tout ça sur une base de données.<br><br>
+        Langages : Java, JavaFx, MySQL, ...</p>
+    </section>
+
+    <section id="projetGSB" class="content-block">
+      <h2>Description projet GSB</h2><br>
+      <p>Ce projet à pour objectif de réaliser une interface graphique en java 
+          sur le sujet du sport avec des compétitions, composé de différentes équipes et différents candidats,
+          avec plusieurs possibilités pour chaque (ex: ajout, suppression, modification…). 
+          De plus, nous devons relier tout ça sur une base de données.<br><br>
+          Langages : Java, JavaFx, MySQL, ...</p>
+      </section>
+
+      <section id="projetAutres" class="content-block">
+        <h2>Description projet Autre</h2><br>
+        <p>Ce projet à pour objectif de réaliser une interface graphique en java 
+            sur le sujet du sport avec des compétitions, composé de différentes équipes et différents candidats,
+            avec plusieurs possibilités pour chaque (ex: ajout, suppression, modification…). 
+            De plus, nous devons relier tout ça sur une base de données.<br><br>
+            Langages : Java, JavaFx, MySQL, ...</p>
+        </section>
 <!-- -------------------------------------------------------------
 # Bas de page
 -------------------------------------------------------------- -->
@@ -121,6 +159,7 @@
   Tous droits réservés
 </div>
 </footer>
+<script src="../js/script.js"></script>
 
 </body>
 </html>

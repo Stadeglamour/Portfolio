@@ -167,7 +167,7 @@ height: 150px;
 
 /* Block */
 .content-block {
-background-color: #000000ad;
+background-color: #000000dd;
 padding: 30px;
 margin: 20px;
 border-radius: 10px;
@@ -183,7 +183,7 @@ border-radius: 10px;
 }
 
 .content-block-presentation{
-  background-color: #000000ad;
+  background-color: #000000dd;
   padding: 30px;
   margin: 20px;
   border-radius: 10px;
@@ -431,10 +431,48 @@ border-radius: 10px;
 /*--------------------------------------------------------------
 # Compétences
 --------------------------------------------------------------*/
-/* 
-// Responsive My Skills Box Widget
-*/
+.skills-card {
+  background: var(--white);
+  text-align: center;
+  border-radius: 30px;
+  padding: 30px 0px 0px;
+  margin-bottom: 30px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.skills-img {
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  transition: transform 0.3s ease-in-out; 
+}
+.skills-name {
+  border-top: 1px solid var(--border);
+}
+.skills-card:hover {
+  transform: scale(1.3); /* Agrandit légèrement la carte */
+}
+.skills-img img {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50%;
+}
+.skills-card:hover .skills-name p {
+  color: rgba(105, 210, 213, 0.868); /* Change la couleur du texte au survol */
+  font-weight: bold;
+}
 
+
+/* -------------- Animation compétences --------------- */
 #SkillBox {
 font-size: 20px;
 font-family: 'Indie Flower', cursive;
@@ -455,13 +493,14 @@ position: relative;
 background: rgba(17, 17, 17, .3);
 margin: 20px auto;
 }
+
 /* Animation html */
 #Skill-HTML {
-width: 60%;
-animation: Animate-HTML 4s;
--webkit-animation: Animate-HTML 4s;
--moz-animation: Animate-HTML 4s;
--o-animation: Animate-HTML 4s;
+animation: Animate-HTML 5s;
+-webkit-animation: Animate-HTML 5s;
+-moz-animation: Animate-HTML 5s;
+-o-animation: Animate-HTML 5s;
+width: 80%;
 height: 50px;
 position: absolute;
 background-color: #ea8564;
@@ -471,25 +510,25 @@ from {
 width: 10px;
 }
 to {
-width: 60%}
+width: 80%}
 }@-webkit-keyframes Animate-HTML {
 from {
 width: 10px;
 }
 to {
-width: 60%}
+width: 80%}
 }@-moz-keyframes Animate-HTML {
 from {
 width: 10px;
 }
 to {
-width: 60%}
+width: 80%}
 }@-o-keyframes Animate-HTML {
 from {
 width: 10px;
 }
 to {
-width: 60%}
+width: 80%}
 }
 /* Animation css */
 #Skill-CSS {
@@ -497,7 +536,7 @@ animation: Animate-CSS 5s;
 -webkit-animation: Animate-CSS 5s;
 -moz-animation: Animate-CSS 5s;
 -o-animation: Animate-CSS 5s;
-width: 50%;
+width: 80%;
 height: 50px;
 position: absolute;
 background-color: #55a69f;
@@ -507,26 +546,25 @@ from {
 width: 10px;
 }
 to {
-width: 50%}
+width: 80%}
 }@-webkit-keyframes Animate-CSS {
 from {
 width: 10px;
 }
 to {
-width: 50%}
+width: 80%}
 }@-moz-keyframes Animate-CSS {
 from {
 width: 10px;
 }
 to {
-width: 50%}
+width: 80%}
 }@-o-keyframes Animate-CSS {
 from {
 width: 10px;
 }
 to {
-width: 50%}
-
+width: 80%}
 }
 /* Animation JS */
 #Skill-JS {
@@ -534,7 +572,7 @@ animation: Animate-JS 4s;
 -webkit-animation: Animate-JS 4s;
 -moz-animation: Animate-JS 4s;
 -o-animation: Animate-JS 4s;
-width: 0%;
+width: 40%;
 height: 50px;
 position: absolute;
 background-color: #c44e45;
@@ -544,25 +582,25 @@ from {
 width: 10px;
 }
 to {
-width: 0%}
+width: 40%}
 }@-webkit-keyframes Animate-JS {
 from {
 width: 10px;
 }
 to {
-width: 0%}
+width: 40%}
 }@-moz-keyframes Animate-JS {
 from {
 width: 10px;
 }
 to {
-width: 0%}
+width: 40%}
 }@-o-keyframes Animate-JS {
 from {
 width: 10px;
 }
 to {
-width: 0%}
+width: 40%}
 
 }
 /* Animation Python */
@@ -571,7 +609,7 @@ animation: Animate-Python 4s;
 -webkit-animation: Animate-Python 4s;
 -moz-animation: Animate-Python 4s;
 -o-animation: Animate-Python 4s;
-width: 15%;
+width: 20%;
 height: 50px;
 position: absolute;
 background-color: #970cc1;
@@ -581,26 +619,65 @@ from {
 width: 10px;
 }
 to {
-width: 15%}
+width: 20%}
 }@-webkit-keyframes Animate-Python {
 from {
 width: 10px;
 }
 to {
-width: 15%}
+width: 20%}
 }@-moz-keyframes Animate-Python {
 from {
 width: 10px;
 }
 to {
-width: 15%}
+width: 20%}
 }@-o-keyframes Animate-Python {
 from {
 width: 10px;
 }
 to {
-width: 15%}
+width: 20%}
 }
+
+/* Animation Dart */
+#Skill-Dart {
+  animation: Animate-Dart 4s;
+  -webkit-animation: Animate-Dart 4s;
+  -moz-animation: Animate-Dart 4s;
+  -o-animation: Animate-Dart 4s;
+  width: 40%;
+  height: 50px;
+  position: absolute;
+  background-color: #d77474;
+  }
+  @keyframes Animate-Dart {
+  from {
+  width: 10px;
+  }
+  to {
+  width: 40%}
+  }@-webkit-keyframes Animate-Dart {
+  from {
+  width: 10px;
+  }
+  to {
+  width: 40%}
+  }@-moz-keyframes Animate-Dart {
+  from {
+  width: 10px;
+  }
+  to {
+  width: 40%}
+  }@-o-keyframes Animate-Dart {
+  from {
+  width: 10px;
+  }
+  to {
+  width: 40%}
+  
+  }
+
 /* Animation JAVA */
 #Skill-JAVA {
 animation: Animate-JAVA 4s;
@@ -679,7 +756,7 @@ animation: Animate-SQL 4s;
 -webkit-animation: Animate-SQL 4s;
 -moz-animation: Animate-SQL 4s;
 -o-animation: Animate-SQL 4s;
-width: 15%;
+width: 20%;
 height: 50px;
 position: absolute;
 background-color: #23b1db;
@@ -689,25 +766,25 @@ from {
 width: 10px;
 }
 to {
-width: 15%}
+width: 20%}
 }@-webkit-keyframes Animate-SQL {
 from {
 width: 10px;
 }
 to {
-width: 15%}
+width: 20%}
 }@-moz-keyframes Animate-SQL {
 from {
 width: 10px;
 }
 to {
-width: 15%}
+width: 20%}
 }@-o-keyframes Animate-SQL {
 from {
 width: 10px;
 }
 to {
-width: 15%}
+width: 20%}
 
 }.Skill-Area {
 z-index: 1;
@@ -735,106 +812,106 @@ font-size: 18px;
 # Logiciels 
 --------------------------------------------------------------*/
 #Skill-VScode {
-    width: 70%;
-    animation: Animate-HTML 4s;
-    -webkit-animation: Animate-HTML 4s;
-    -moz-animation: Animate-HTML 4s;
-    -o-animation: Animate-HTML 4s;
+    width: 80%;
+    animation: Animate-VScode 4s;
+    -webkit-animation: Animate-VScode 4s;
+    -moz-animation: Animate-VScode 4s;
+    -o-animation: Animate-VScode 4s;
     height: 50px;
     position: absolute;
     background-color: #ea8564;
     }
-    @keyframes Animate-HTML {
+    @keyframes Animate-VScode {
     from {
     width: 10px;
     }
     to {
-    width: 70%}
-    }@-webkit-keyframes Animate-HTML {
+    width: 80%}
+    }@-webkit-keyframes Animate-VScode {
+    from {
+    width: 80px;
+    }
+    to {
+    width: 80%}
+    }@-moz-keyframes Animate-VScode {
     from {
     width: 10px;
     }
     to {
-    width: 70%}
-    }@-moz-keyframes Animate-HTML {
+    width: 80%}
+    }@-o-keyframes Animate-VScode {
     from {
     width: 10px;
     }
     to {
-    width: 70%}
-    }@-o-keyframes Animate-HTML {
-    from {
-    width: 10px;
-    }
-    to {
-    width: 70%}
+    width: 80%}
     }
 
 #Skill-Intellij {
-    width: 50%;
-    animation: Animate-HTML 4s;
-    -webkit-animation: Animate-HTML 4s;
-    -moz-animation: Animate-HTML 4s;
-    -o-animation: Animate-HTML 4s;
+    width: 60%;
+    animation: Animate-Intellij 4s;
+    -webkit-animation: Animate-Intellij 4s;
+    -moz-animation: Animate-Intellij 4s;
+    -o-animation: Animate-Intellij 4s;
     height: 50px;
     position: absolute;
     background-color: #a32684;
     }
-    @keyframes Animate-HTML {
+    @keyframes Animate-Intellij {
     from {
     width: 10px;
     }
     to {
-    width: 50%}
-    }@-webkit-keyframes Animate-HTML {
+    width: 60%}
+    }@-webkit-keyframes Animate-Intellij {
     from {
     width: 10px;
     }
     to {
-    width: 50%}
-    }@-moz-keyframes Animate-HTML {
+    width: 60%}
+    }@-moz-keyframes Animate-Intellij {
     from {
     width: 10px;
     }
     to {
-    width: 50%}
-    }@-o-keyframes Animate-HTML {
+    width: 60%}
+    }@-o-keyframes Animate-Intellij {
     from {
     width: 10px;
     }
     to {
-    width: 50%}
+    width: 60%}
     }
 
 #Skill-Github {
     width: 50%;
-    animation: Animate-HTML 4s;
-    -webkit-animation: Animate-HTML 4s;
-    -moz-animation: Animate-HTML 4s;
-    -o-animation: Animate-HTML 4s;
+    animation: Animate-Github 4s;
+    -webkit-animation: Animate-Github 4s;
+    -moz-animation: Animate-Github 4s;
+    -o-animation: Animate-Github 4s;
     height: 50px;
     position: absolute;
     background-color: #251622;
     }
-    @keyframes Animate-HTML {
+    @keyframes Animate-Github {
     from {
     width: 10px;
     }
     to {
     width: 50%}
-    }@-webkit-keyframes Animate-HTML {
+    }@-webkit-keyframes Animate-Github {
     from {
     width: 10px;
     }
     to {
     width: 50%}
-    }@-moz-keyframes Animate-HTML {
+    }@-moz-keyframes Animate-Github {
     from {
     width: 10px;
     }
     to {
     width: 50%}
-    }@-o-keyframes Animate-HTML {
+    }@-o-keyframes Animate-Github {
     from {
     width: 10px;
     }
@@ -844,39 +921,147 @@ font-size: 18px;
 
 #Skill-Docker {
     width: 25%;
-    animation: Animate-HTML 4s;
-    -webkit-animation: Animate-HTML 4s;
-    -moz-animation: Animate-HTML 4s;
-    -o-animation: Animate-HTML 4s;
+    animation: Animate-Docker 4s;
+    -webkit-animation: Animate-Docker 4s;
+    -moz-animation: Animate-Docker 4s;
+    -o-animation: Animate-Docker 4s;
     height: 50px;
     position: absolute;
     background-color: #3684cc;
     }
-    @keyframes Animate-HTML {
+    @keyframes Animate-Docker {
     from {
     width: 10px;
     }
     to {
     width: 25%}
-    }@-webkit-keyframes Animate-HTML {
+    }@-webkit-keyframes Animate-Docker {
     from {
     width: 10px;
     }
     to {
     width: 25%}
-    }@-moz-keyframes Animate-HTML {
+    }@-moz-keyframes Animate-Docker {
     from {
     width: 10px;
     }
     to {
     width: 25%}
-    }@-o-keyframes Animate-HTML {
+    }@-o-keyframes Animate-Docker {
     from {
     width: 10px;
     }
     to {
     width: 25%}
     }
+
+    #Skill-WordPress {
+      width: 60%;
+      animation: Animate-WordPress 4s;
+      -webkit-animation: Animate-WordPress 4s;
+      -moz-animation: Animate-WordPress 4s;
+      -o-animation: Animate-WordPress 4s;
+      height: 50px;
+      position: absolute;
+      background-color: #173756;
+      }
+      @keyframes Animate-WordPress {
+      from {
+      width: 10px;
+      }
+      to {
+      width: 60%}
+      }@-webkit-keyframes Animate-WordPress {
+      from {
+      width: 10px;
+      }
+      to {
+      width: 60%}
+      }@-moz-keyframes Animate-WordPress {
+      from {
+      width: 10px;
+      }
+      to {
+      width: 60%}
+      }@-o-keyframes Animate-WordPress {
+      from {
+      width: 10px;
+      }
+      to {
+      width: 60%}
+      }
+
+      #Skill-Flutter {
+        width: 40%;
+        animation: Animate-Flutter 4s;
+        -webkit-animation: Animate-Flutter 4s;
+        -moz-animation: Animate-Flutter 4s;
+        -o-animation: Animate-Flutter 4s;
+        height: 50px;
+        position: absolute;
+        background-color: #2cc75d;
+        }
+        @keyframes Animate-Flutter {
+        from {
+        width: 10px;
+        }
+        to {
+        width: 40%}
+        }@-webkit-keyframes Animate-Flutter {
+        from {
+        width: 10px;
+        }
+        to {
+        width: 40%}
+        }@-moz-keyframes Animate-Flutter {
+        from {
+        width: 10px;
+        }
+        to {
+        width: 40%}
+        }@-o-keyframes Animate-Flutter {
+        from {
+        width: 10px;
+        }
+        to {
+        width: 40%}
+        }
+
+        #Skill-Figma {
+          width: 25%;
+          animation: Animate-Figma 4s;
+          -webkit-animation: Animate-Figma 4s;
+          -moz-animation: Animate-Figma 4s;
+          -o-animation: Animate-Figma 4s;
+          height: 50px;
+          position: absolute;
+          background-color: #8f0909;
+          }
+          @keyframes Animate-Figma {
+          from {
+          width: 10px;
+          }
+          to {
+          width: 25%}
+          }@-webkit-keyframes Animate-Figma {
+          from {
+          width: 10px;
+          }
+          to {
+          width: 25%}
+          }@-moz-keyframes Animate-Figma {
+          from {
+          width: 10px;
+          }
+          to {
+          width: 25%}
+          }@-o-keyframes Animate-Figma {
+          from {
+          width: 10px;
+          }
+          to {
+          width: 25%}
+          }
 /*--------------------------------------------------------------
 # Contact 
 --------------------------------------------------------------*/

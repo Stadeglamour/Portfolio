@@ -218,3 +218,58 @@
     new PureCounter();
   
   })()
+/*--------------------------------------------------------------
+  # projet
+  --------------------------------------------------------------*/
+// Fonction pour afficher l'image en grand
+function showImage(imageSrc) {
+  let modal = document.getElementById("imageModal"); 
+  let modalImg = document.getElementById("modalImg");
+
+  modalImg.src = imageSrc; // Met l'image correcte
+  modal.style.display = "flex"; // Affiche la modale
+}
+
+// Fonction pour fermer l'image
+function closeImage() {
+  document.getElementById("imageModal").style.display = "none"; // Cache la modale
+}
+
+function showTitle(element) {
+  let title = element.querySelector('.hover-title');
+  title.classList.add('show');
+}
+
+function hideTitle(element) {
+  let title = element.querySelector('.hover-title');
+  title.classList.remove('show');
+}
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll("#portfolio-flters-3 li");  // Boutons de filtrage
+  const portfolioItems = document.querySelectorAll(".portfolio-item"); // Les éléments de portfolio
+
+  filterButtons.forEach(button => {
+      button.addEventListener("click", function () {
+          // Enlever la classe active de tous les boutons
+          filterButtons.forEach(btn => btn.classList.remove("filter-active"));
+
+          // Ajouter la classe active au bouton sélectionné
+          this.classList.add("filter-active");
+
+          const filter = this.getAttribute("data-filter"); // Récupère le filtre de l'élément cliqué
+
+          portfolioItems.forEach(item => {
+              // Si l'élément correspond au filtre ou si le filtre est "*", affiche l'élément
+              if (filter === "*" || item.classList.contains(filter.substring(1))) {
+                  item.style.display = "block"; // Affiche
+              } else {
+                  item.style.display = "none"; // Cache
+              }
+          });
+      });
+  });
+
+  // En cliquant sur "Tous" par défaut, cela affiche tous les projets
+  document.querySelector('[data-filter="*"]').click();
+});
+
