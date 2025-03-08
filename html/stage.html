@@ -17,7 +17,6 @@
 </head>
 <body>
 <marquee> Ce portfolio est actuellement en cours de création . . .</marquee>
-<!-- Haut de page -->
 <header>
   <img src="../img/Mathilda.png" alt="Logo" class="logo">
   <nav class="menu">
@@ -28,7 +27,14 @@
   <a href="../html/competence.html"><i class='bx bxs-bar-chart-alt-2'></i> Compétences</a>
   <a href="../html/contact.html"><i class='bx bx-message-dots'></i> Contact</a>
   </nav>
+  <div class="burger" onclick="toggleMenu()">☰</div>
 </header>
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+</script>
 
 <!-- -------------------------------------------------------------
 # Stages
@@ -147,7 +153,7 @@
 
  <section style="background-image: linear-gradient(to right, #000000dd, #000000dd);z-index: 200" id="fixed-section">
     <div class="fixed-section-wrapper">
-      <h2 style="padding-right: 3%;text-align: center">STAGE BTS SIO - NETCELER</h2>
+      <h2 style="padding-right: 3%;text-align: center">DETAILS - STAGE BTS SIO</h2>
       <nav class="nav">
         <a href="#entreprise" class="nav-item is-active" active-color="blue">Entreprise</a>
         <a href="#stage" class="nav-item" active-color="blue">Stages</a>
@@ -215,9 +221,7 @@
           <p style="margin-left: 100px" align="justify">
             <span class="alinea-text">Le</span> domaine et secteur parking, existent depuis quelques années et est en pleine expansion.
             <br><br>
-            <span class="alinea-text">Cela </span> se compose de 
-            <br><br>
-            <span class="alinea-text">suite </span> suite
+            <span class="alinea-text">Cela </span> se compose d'une équipe de developpeurs, de techniciens.
             <br><br>
           </p>
           <h3><b><span class="alinea-text"></span>L.Web</b></h3><br>
@@ -518,29 +522,8 @@
       <div class="section-title">
         <h2>Conclusion</h2>
         <p style="margin-left: 50px" align="justify">
-          <span class="alinea-text">J'ai</span> vraiment appréciée faire ce stage. Il m'a permis de me familiariser avec le travail 
-          et la vie en entreprise pendant 6 semaines. <br><br>
+          <span class="alinea-text">Je</span>vous invite à télécharger en annexes mon rapport et ma conclusion de stage pour en savoir plus.  <br><br>
 
-          Au cours de ce stage j’ai tout d’abord eu de vagues informations sur le travail à 
-          fournir et à réaliser en tant que stagiaire, car mon maître de stage était très occupé. 
-          Ensuite, au fil des semaines, j'ai reçu davantage d'informations et d'objectifs à 
-          accomplir avec une autre personne de l'entreprise qui m'a prise en charge.<br><br>
-
-          Mes objectifs étaient : <br>
-          - de mettre à jour un ancien simulateur d’une caméra thermique de sorte qu’il renvoie différentes alertes selon la situation
-          (alerte incendie, alerte au flux de données…) ou encore que la caméra envoie des signes de vie toutes les X 
-          secondes afin de vérifier que tout soit en règle. <br>
-
-          - de parvenir à faire fonctionner le simulateur sur une machine virtuelle (VM). + 
-          mettre le simulateur en bdd (H2).<br><br>
-
-          Pour mener à bien ce projet, j'ai consacré des semaines à effectuer des tests unitaires en interne afin d'explorer les différentes fonctionnalités en fonction des
-          objectifs. J'ai visionné beaucoup de tutoriels et passé beaucoup d'heures avec une personne de l'entreprise qui m'a tout expliqué en utilisant des schémas, pour que 
-          je comprenne mieux.<br><br>
-
-          Grâce à ce stage, j'ai pu améliorer mes compétences, en particulier en JAVA et en framework Java. J'ai eu l'opportunité de découvrir de nombreux logiciels
-          et applications utilisés dans l'entreprise(comme : docker, podman, postman, jira, bitbucket, spring boot et bien d’autres…), 
-          j'ai appris à les manipuler et à les utiliser efficacement. De plus, j'ai découvert de nombreuses fonctionnalités sur Intellij en l'utilisant durant toutes ces semaines.  <br><br>
         </p>
       </div>
     </div>
@@ -570,7 +553,6 @@
                  </svg>
              </div>
          </a>
-         
          <script>
            document.getElementById('btn_1').addEventListener('click', function(event) {
              event.preventDefault();
@@ -591,11 +573,11 @@
            });
          </script>
          
-          <!-- Bouton pour le Rapport de stage -->
+          <!-- Bouton pour le tableau de synthèse -->
           <div class="container-btn">
-            <a href="../html/" target="_blank" id="btn_1" class="button dark">
+            <a href="../html/Tableau_synthese_2025_BLANC.pdf" target="_blank" id="btn_2" class="button dark">
               <ul>
-                  <li>Conclusion & rapport de stage L.Web</li>
+                  <li>Tableau de synthèse - Epreuve-E5</li>
                   <li>Téléchargement</li>
                   <li>Ouvrez le document</li>
               </ul>
@@ -605,21 +587,20 @@
                   </svg>
               </div>
           </a>
-          
           <script>
-            document.getElementById('btn_1').addEventListener('click', function(event) {
+            document.getElementById('btn_2').addEventListener('click', function(event) {
               event.preventDefault();
               
               // Ajoute un délai de 5 secondes avant d'ouvrir le fichier
               setTimeout(function() {
                 // Ouvre le fichier dans un nouvel onglet
-                let openLink = window.open('../html/BLANC_Rapport_de_stage.pdf', '_blank');
+                let openLink = window.open('../html/Tableau_synthese_2025_BLANC.pdf', '_blank');
                 
                 // Forcer le téléchargement après ouverture du nouvel onglet
                 openLink.onload = function() {
                   let downloadLink = document.createElement('a');
-                  downloadLink.href = '../html/BLANC_Rapport_de_stage.pdf';
-                  downloadLink.download = 'BLANC_Rapport_de_stage.pdf';
+                  downloadLink.href = '../html/Tableau_synthese_2025_BLANC.pdf';
+                  downloadLink.download = 'Tableau_synthese_2025_BLANC.pdf';
                   downloadLink.click();
                 };
               }, 3000);  // 3000 millisecondes = 3 secondes
@@ -627,28 +608,45 @@
           </script>
          
 
-   <!-- Bouton pour l'Attestation de stage n°1 (2024) -->
+   <!-- Bouton pour attestation de stage -->
    <div class="container-btn">
-       <link rel="stylesheet" href="../css/btn-download.css">
-       <a href="../html/Attestation_Stage_2024.pdf" target="_blank" id="btn_2" class="button dark">
-           <ul>
-               <li>Attestation de stage n°1 (2024)</li>
-               <li>Téléchargement</li>
-               <li>Ouvrez le document</li>
-           </ul>
-           <div>
-               <svg viewBox="0 0 24 24">
-                   <!-- Icône SVG ou autre contenu -->
-               </svg>
-           </div>
-       </a>
-       <i class="bi bi-lock-fill fs-3"></i>
-   </div>
+    <a href="../html/" target="_blank" id="btn_3" class="button dark">
+      <ul>
+          <li>Attestation de stage n°1 (2024)</li>
+          <li>Téléchargement</li>
+          <li>Ouvrez le document</li>
+      </ul>
+      <div>
+          <svg viewBox="0 0 24 24">
+              <!-- Icône SVG ou autre contenu -->
+          </svg>
+      </div>
+  </a>
+  <script>
+    document.getElementById('btn_3').addEventListener('click', function(event) {
+      event.preventDefault();
+      
+      // Ajoute un délai de 5 secondes avant d'ouvrir le fichier
+      setTimeout(function() {
+        // Ouvre le fichier dans un nouvel onglet
+        let openLink = window.open('../html/', '_blank');
+        
+        // Forcer le téléchargement après ouverture du nouvel onglet
+        openLink.onload = function() {
+          let downloadLink = document.createElement('a');
+          downloadLink.href = '../html/';
+          downloadLink.download = '';
+          downloadLink.click();
+        };
+      }, 3000);  // 3000 millisecondes = 3 secondes
+    });
+  </script>
+ 
 
    <!-- Bouton pour l'Attestation de stage n°2 (2025) -->
    <div class="container-btn">
        <link rel="stylesheet" href="../css/btn-download.css">
-       <a href="../html/Attestation_Stage_2025.pdf" target="_blank" id="btn_3" class="button dark">
+       <a href="../html/Attestation_Stage_2025.pdf" target="_blank" id="btn_4" class="button dark">
            <ul>
                <li>Attestation de stage n°2 (2025)</li>
                <li>Téléchargement</li>
@@ -662,8 +660,32 @@
        </a>
        <i class="bi bi-lock-fill fs-3"></i>
    </div>
-
+    <script>
+        document.getElementById('btn_4').addEventListener('click', function(event) {
+            event.preventDefault();
+            
+            // Ajoute un délai de 5 secondes avant d'ouvrir le fichier
+            setTimeout(function() {
+                // Ouvre le fichier dans un nouvel onglet
+                let openLink = window.open('../html/Attestation_Stage_2025.pdf', '_blank');
+                
+                // Forcer le téléchargement après ouverture du nouvel onglet
+                openLink.onload = function() {
+                    let downloadLink = document.createElement('a');
+                    downloadLink.href = '../html/Attestation_Stage_2025.pdf';
+                    downloadLink.download = 'Attestation_Stage_2025.pdf';
+                    downloadLink.click();
+                };
+            }, 3000);  // 3000 millisecondes = 3 secondes
+        });
+    </script>
+  </div>
 </div>
+</div>
+</div>
+</section>
+<!-- Fin Annexes Section -->
+
 
    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

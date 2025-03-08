@@ -516,6 +516,13 @@ html {
   margin: 0 0 1rem 0;
 }
 
+.mini-card-title-mois {
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+  color:  #ff7a18;
+  /*background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);*/
+}
+
 .jetpack-sharing-buttons__services-list{
   display:flex;
   flex-direction:row;

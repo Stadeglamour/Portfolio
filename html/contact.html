@@ -15,7 +15,6 @@
 </head>
 <body>
 <marquee> Ce portfolio est actuellement en cours de création . . .</marquee>
-<!-- Haut de page -->
 <header>
     <img src="../img/Mathilda.png" alt="Logo" class="logo">
     <nav class="menu">
@@ -26,7 +25,14 @@
     <a href="../html/competence.html"><i class='bx bxs-bar-chart-alt-2'></i> Compétences</a>
     <a href="../html/contact.html"><i class='bx bx-message-dots'></i> Contact</a>
     </nav>
-</header>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+  </header>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('active');
+    }
+  </script>
 
 
 <!-- -------------------------------------------------------------

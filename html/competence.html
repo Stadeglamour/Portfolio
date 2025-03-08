@@ -19,16 +19,23 @@
 <marquee> Ce portfolio est actuellement en cours de création . . .</marquee>
 <!-- Haut de page -->
 <header>
-<img src="../img/Mathilda.png" alt="Logo" class="logo">
-<nav class="menu">
-<a href="../html/index.html"><i class='bx bxs-user-pin'></i> Présentation</a>
-<a href="../html/projet.html"><i class='bx bx-briefcase-alt-2'></i> Projets</a>
-<a href="../html/stage.html"><i class='bx bxs-building-house'></i> Stages</a>
-<a href="../html/veille.html"><i class='bx bxs-devices'></i> Veille</a>
-<a href="../html/competence.html"><i class='bx bxs-bar-chart-alt-2'></i> Compétences</a>
-<a href="../html/contact.html"><i class='bx bx-message-dots'></i> Contact</a>
-</nav>
-</header>
+    <img src="../img/Mathilda.png" alt="Logo" class="logo">
+    <nav class="menu">
+    <a href="../html/index.html"><i class='bx bxs-user-pin'></i> Présentation</a>
+    <a href="../html/projet.html"><i class='bx bx-briefcase-alt-2'></i> Projets</a>
+    <a href="../html/stage.html"><i class='bx bxs-building-house'></i> Stages</a>
+    <a href="../html/veille.html"><i class='bx bxs-devices'></i> Veille</a>
+    <a href="../html/competence.html"><i class='bx bxs-bar-chart-alt-2'></i> Compétences</a>
+    <a href="../html/contact.html"><i class='bx bx-message-dots'></i> Contact</a>
+    </nav>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+  </header>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('active');
+    }
+  </script>
 
 <!-- -------------------------------------------------------------
 # Compétences
@@ -280,16 +287,6 @@
     </div>
 </section>
 </section> 
-<!-- -------------------------------------------------------------
-# CV
--------------------------------------------------------------- -->
-<section id="CV" class="content-block">
-    <h2>CV</h2>
-    <p> Cliquer ci-dessous pour voir mon curriculum vitae </p>
-    <a href="CV.html" target="_blank">
-<img src="image/CV_logo.png" alt="CV">
-    </a>
-</section>
 <!-- -------------------------------------------------------------
 # Bas de page
 -------------------------------------------------------------- -->

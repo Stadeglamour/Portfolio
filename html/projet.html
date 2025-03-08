@@ -30,8 +30,14 @@
   <a href="../html/competence.html"><i class='bx bxs-bar-chart-alt-2'></i> Compétences</a>
   <a href="../html/contact.html"><i class='bx bx-message-dots'></i> Contact</a>
   </nav>
+  <div class="burger" onclick="toggleMenu()">☰</div>
 </header>
-
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+</script>
 <!-- -------------------------------------------------------------
 # Projet
 -------------------------------------------------------------- -->
@@ -99,15 +105,15 @@
             <img id="modalImg" class="modal-content" alt="Image en grand">
             </div>
 
-            <!-- Projet Autres -->
+            <!-- Projet GSB mobile -->
             <div class="col-lg-4 col-md-6 portfolio-item filter-helport">
               <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
                 <img src="/img/article3.png" class="img-fluid portfolio-img">
-                <div class="hover-title"> Projet Autre</div>
+                <div class="hover-title"> Projet GSB mobile</div>
                 <div class="portfolio-links">
                   <a href="#" class="portfolio-lightbox"  onclick="showImage('/img/article3.png'); return false;">
                     <i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
-                  <a href="#projetAutres">
+                  <a href="#projetGSBmobile">
                     <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
                   </a>
                 </div>
@@ -117,11 +123,51 @@
             <span class="close" onclick="closeImage()">&times;</span>
             <img id="modalImg" class="modal-content" alt="Image en grand">
             </div>
-          </div>
-        </div>
-      </section>
+
+  <!-- Projet Portfolio -->
+  <div class="col-lg-4 col-md-6 portfolio-item filter-helport">
+    <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+      <img src="/img/Portfolio.png" class="img-fluid portfolio-img">
+      <div class="hover-title"> Portfolio</div>
+      <div class="portfolio-links">
+        <a href="#" class="portfolio-lightbox"  onclick="showImage('/img/Portfolio.png'); return false;">
+          <i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+        <a href="#projetportfolio">
+          <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
+        </a>
+      </div>
     </div>
-  </section>
+  </div>
+  <div id="imageModal" class="modal"> <!-- Pour afficher l'image en grand -->
+  <span class="close" onclick="closeImage()">&times;</span>
+  <img id="modalImg" class="modal-content" alt="Image en grand">
+  </div>
+
+
+  <!-- Projet Bonus -->
+  <div class="col-lg-4 col-md-6 portfolio-item filter-helport">
+    <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+      <img src="/img/article3.png" class="img-fluid portfolio-img">
+      <div class="hover-title"> Projet Bonus</div>
+      <div class="portfolio-links">
+        <a href="#" class="portfolio-lightbox"  onclick="showImage('/img/article3.png'); return false;">
+          <i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+        <a href="#projetBonus">
+          <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="imageModal" class="modal"> <!-- Pour afficher l'image en grand -->
+  <span class="close" onclick="closeImage()">&times;</span>
+  <img id="modalImg" class="modal-content" alt="Image en grand">
+  </div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
 
   <section id="projetM2L" class="content-block">
     <h2>Description projet M2L</h2><br>
@@ -132,23 +178,31 @@
         Langages : Java, JavaFx, MySQL, ...</p>
     </section>
 
-    <section id="projetGSB" class="content-block">
-      <h2>Description projet GSB</h2><br>
-      <p>Ce projet à pour objectif de réaliser une interface graphique en java 
-          sur le sujet du sport avec des compétitions, composé de différentes équipes et différents candidats,
-          avec plusieurs possibilités pour chaque (ex: ajout, suppression, modification…). 
-          De plus, nous devons relier tout ça sur une base de données.<br><br>
-          Langages : Java, JavaFx, MySQL, ...</p>
+    <section id="projetGSBweb" class="content-block">
+      <h2>Description projet GSB Web</h2><br>
+      <p>.<br><br>
+          Langages : Symfony, php, firebase, ...</p>
       </section>
 
-      <section id="projetAutres" class="content-block">
-        <h2>Description projet Autre</h2><br>
-        <p>Ce projet à pour objectif de réaliser une interface graphique en java 
-            sur le sujet du sport avec des compétitions, composé de différentes équipes et différents candidats,
-            avec plusieurs possibilités pour chaque (ex: ajout, suppression, modification…). 
-            De plus, nous devons relier tout ça sur une base de données.<br><br>
-            Langages : Java, JavaFx, MySQL, ...</p>
+      <section id="projetGSBmobile" class="content-block">
+        <h2>Description projet GSB mobile</h2><br>
+        <p>. <br><br>
+            Langages : Flutter, Dart, firebase, ...</p>
         </section>
+
+        <section id="projetportfolio" class="content-block">
+          <h2>Description du portfolio</h2><br>
+          <p>.
+            <br><br>
+              Langages : HTML, CSS, Javascript</p>
+          </section>
+
+          <section id="projetBonus" class="content-block">
+            <h2>Description projet Bonus</h2><br>
+            <p> .
+              <br><br>
+                Langages : ?</p>
+            </section>
 <!-- -------------------------------------------------------------
 # Bas de page
 -------------------------------------------------------------- -->
