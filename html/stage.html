@@ -159,6 +159,7 @@
         <a href="#stage" class="nav-item" active-color="blue">Stages</a>
         <a href="#missions" class="nav-item" active-color="blue">Missions</a>
         <a href="#conclusion" class="nav-item" active-color="blue">Conclusion</a>
+        <a href="#breadcrumbs" class="nav-item" active-color="blue"> ↑ </a>
         <span class="nav-indicator"></span>
       </nav>
       <script  src="../js/stage.js"></script>
@@ -541,7 +542,7 @@
      
          <!-- Bouton pour le Rapport de stage -->
          <div class="container-btn">
-           <a href="../html/BLANC_Rapport_de_stage.pdf" target="_blank" id="btn_1" class="button dark">
+           <a href="../html/BLANC_Rapport_de_stage_quotidien_2024.pdf" target="_blank" id="btn_1" class="button dark">
              <ul>
                  <li>Conclusion & rapport de stage Netceler</li>
                  <li>Téléchargement</li>
@@ -560,18 +561,52 @@
              // Ajoute un délai de 5 secondes avant d'ouvrir le fichier
              setTimeout(function() {
                // Ouvre le fichier dans un nouvel onglet
-               let openLink = window.open('../html/BLANC_Rapport_de_stage.pdf', '_blank');
+               let openLink = window.open('../html/BLANC_Rapport_de_stage_quotidien_2024.pdf', '_blank');
                
                // Forcer le téléchargement après ouverture du nouvel onglet
                openLink.onload = function() {
                  let downloadLink = document.createElement('a');
-                 downloadLink.href = '../html/BLANC_Rapport_de_stage.pdf';
-                 downloadLink.download = 'BLANC_Rapport_de_stage.pdf';
+                 downloadLink.href = '../html/BLANC_Rapport_de_stage_quotidien_2024.pdf';
+                 downloadLink.download = 'BLANC_Rapport_de_stage_quotidien_2024.pdf';
                  downloadLink.click();
                };
              }, 3000);  // 3000 millisecondes = 3 secondes
            });
          </script>
+
+           <!-- Bouton pour le Rapport de stage -->
+           <div class="container-btn">
+            <a href="../html/BLANC_Rapport_stage_quotidien_2025.pdf" target="_blank" id="btn_5" class="button dark">
+              <ul>
+                  <li>Conclusion & rapport de stage LWeb</li>
+                  <li>Téléchargement</li>
+                  <li>Ouvrez le document</li>
+              </ul>
+              <div>
+                  <svg viewBox="0 0 24 24">
+                      <!-- Icône SVG ou autre contenu -->
+                  </svg>
+              </div>
+          </a>
+          <script>
+            document.getElementById('btn_5').addEventListener('click', function(event) {
+              event.preventDefault();
+              
+              // Ajoute un délai de 5 secondes avant d'ouvrir le fichier
+              setTimeout(function() {
+                // Ouvre le fichier dans un nouvel onglet
+                let openLink = window.open('../html/BLANC_Rapport_stage_quotidien_2025.pdf', '_blank');
+                
+                // Forcer le téléchargement après ouverture du nouvel onglet
+                openLink.onload = function() {
+                  let downloadLink = document.createElement('a');
+                  downloadLink.href = '../html/BLANC_Rapport_stage_quotidien_2025.pdf';
+                  downloadLink.download = 'BLANC_Rapport_stage_quotidien_2025.pdf';
+                  downloadLink.click();
+                };
+              }, 3000);  // 3000 millisecondes = 3 secondes
+            });
+          </script>
          
           <!-- Bouton pour le tableau de synthèse -->
           <div class="container-btn">
