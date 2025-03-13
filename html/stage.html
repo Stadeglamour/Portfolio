@@ -681,7 +681,7 @@
    <!-- Bouton pour l'Attestation de stage n°2 (2025) -->
    <div class="container-btn">
        <link rel="stylesheet" href="../css/btn-download.css">
-       <a href="../html/Attestation_Stage_2025.pdf" target="_blank" id="btn_4" class="button dark">
+       <a href="../html/Attestation_stage_2025.pdf" target="_blank" id="btn_4" class="button dark">
            <ul>
                <li>Attestation de stage n°2 (2025)</li>
                <li>Téléchargement</li>
@@ -702,13 +702,13 @@
             // Ajoute un délai de 5 secondes avant d'ouvrir le fichier
             setTimeout(function() {
                 // Ouvre le fichier dans un nouvel onglet
-                let openLink = window.open('../html/Attestation_Stage_2025.pdf', '_blank');
+                let openLink = window.open('../html/Attestation_stage_2025.pdf', '_blank');
                 
                 // Forcer le téléchargement après ouverture du nouvel onglet
                 openLink.onload = function() {
                     let downloadLink = document.createElement('a');
-                    downloadLink.href = '../html/Attestation_Stage_2025.pdf';
-                    downloadLink.download = 'Attestation_Stage_2025.pdf';
+                    downloadLink.href = '../html/Attestation_stage_2025.pdf';
+                    downloadLink.download = 'Attestation_stage_2025.pdf';
                     downloadLink.click();
                 };
             }, 3000);  // 3000 millisecondes = 3 secondes
