@@ -568,3 +568,30 @@ img#wpstats{display:none}
   background: rgb(233, 219, 219);
 }
 
+/* -------------------------------------------------------------
+# Outils de la veille
+-------------------------------------------------------------- */
+.tool {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+}
+.tool img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+.tool-description {
+  flex: 1;
+}
+.tool h4 {
+  margin: 0 0 5px 0;
+  color: #ff7a18;;
+}
+.tool p {
+  margin: 0;
+  color: #ffffff;
+}

@@ -368,13 +368,10 @@
                           <h6 style="text-decoration: underline; font-weight: bold">- La procédure de mise à jour du simulateur</h6>
                           <br>
                           <ul style="text-align: left">
-                            <i class="icofont-rounded-right"></i>Etude de code<br>
-                            <i class="icofont-rounded-right"></i>Lecture de documentation (clients et autres)<br>
+                            <i class="icofont-rounded-right"></i>Etude du code donner par l'entreprise<br>
                             <i class="icofont-rounded-right"></i>Visionnage de tutoriels pour les points découvertes<br>
-                            <i class="icofont-rounded-right"></i>Discussion compréhension avec une personne de l'entreprise<br>
-                            <i class="icofont-rounded-right"></i>Phase de test <br>
-                            <i class="icofont-rounded-right"></i>Relecture du code par plusieurs dev<br>
-                            <i class="icofont-rounded-right"></i>Publication dans le cloud <br>
+                            <i class="icofont-rounded-right"></i>Phase de test interne (pas disponible légalement)<br>
+                            <i class="icofont-rounded-right"></i>Publication dans le cloud interne à l'entreprise<br>
                           </ul>
                         </div>
                       </div>
@@ -681,7 +678,7 @@
    <!-- Bouton pour l'Attestation de stage n°2 (2025) -->
    <div class="container-btn">
        <link rel="stylesheet" href="../css/btn-download.css">
-       <a href="../html/Attestation_stage_2025.jpg" target="_blank" id="btn_4" class="button dark">
+       <a href="../html/Attestation_Stage_2025.pdf" target="_blank" id="btn_4" class="button dark">
            <ul>
                <li>Attestation de stage n°2 (2025)</li>
                <li>Téléchargement</li>
@@ -702,13 +699,13 @@
             // Ajoute un délai de 5 secondes avant d'ouvrir le fichier
             setTimeout(function() {
                 // Ouvre le fichier dans un nouvel onglet
-                let openLink = window.open('../html/Attestation_stage_2025.jpg', '_blank');
+                let openLink = window.open('../html/Attestation_Stage_2025.pdf', '_blank');
                 
                 // Forcer le téléchargement après ouverture du nouvel onglet
                 openLink.onload = function() {
                     let downloadLink = document.createElement('a');
-                    downloadLink.href = '../html/Attestation_stage_2025.jpg';
-                    downloadLink.download = 'Attestation_stage_2025.jpg';
+                    downloadLink.href = '../html/Attestation_Stage_2025.pdf';
+                    downloadLink.download = 'Attestation_Stage_2025.pdf';
                     downloadLink.click();
                 };
             }, 3000);  // 3000 millisecondes = 3 secondes
