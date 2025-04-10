@@ -671,7 +671,7 @@ animation: Animate-JS 4s;
 -webkit-animation: Animate-JS 4s;
 -moz-animation: Animate-JS 4s;
 -o-animation: Animate-JS 4s;
-width: 40%;
+width: 50%;
 height: 50px;
 position: absolute;
 background-color: #c44e45;
@@ -681,26 +681,25 @@ from {
 width: 10px;
 }
 to {
-width: 40%}
+width: 50%}
 }@-webkit-keyframes Animate-JS {
 from {
 width: 10px;
 }
 to {
-width: 40%}
+width: 50%}
 }@-moz-keyframes Animate-JS {
 from {
 width: 10px;
 }
 to {
-width: 40%}
+width: 50%}
 }@-o-keyframes Animate-JS {
 from {
 width: 10px;
 }
 to {
-width: 40%}
-
+width: 50%}
 }
 /* Animation Python */
 #Skill-Python {
@@ -745,7 +744,7 @@ width: 20%}
   -webkit-animation: Animate-Dart 4s;
   -moz-animation: Animate-Dart 4s;
   -o-animation: Animate-Dart 4s;
-  width: 40%;
+  width: 50%;
   height: 50px;
   position: absolute;
   background-color: #d77474;
@@ -755,26 +754,62 @@ width: 20%}
   width: 10px;
   }
   to {
-  width: 40%}
+  width: 50%}
   }@-webkit-keyframes Animate-Dart {
   from {
   width: 10px;
   }
   to {
-  width: 40%}
+  width: 50%}
   }@-moz-keyframes Animate-Dart {
   from {
   width: 10px;
   }
   to {
-  width: 40%}
+  width: 50%}
   }@-o-keyframes Animate-Dart {
   from {
   width: 10px;
   }
   to {
-  width: 40%}
-  
+  width: 50%}
+  }
+
+/* Animation Symfony */
+#Skill-symfony {
+  animation: Animate-symfony 4s;
+  -webkit-animation: Animate-symfony 4s;
+  -moz-animation: Animate-symfony 4s;
+  -o-animation: Animate-symfony 4s;
+  width: 60%;
+  height: 50px;
+  position: absolute;
+  background-color: #4b0505;
+  }
+  @keyframes Animate-symfony {
+  from {
+  width: 10px;
+  }
+  to {
+  width: 60%}
+  }@-webkit-keyframes Animate-symfony {
+  from {
+  width: 10px;
+  }
+  to {
+  width: 60%}
+  }@-moz-keyframes Animate-symfony {
+  from {
+  width: 10px;
+  }
+  to {
+  width: 60%}
+  }@-o-keyframes Animate-symfony {
+  from {
+  width: 10px;
+  }
+  to {
+  width: 60%}
   }
 
 /* Animation JAVA */
@@ -783,7 +818,7 @@ animation: Animate-JAVA 4s;
 -webkit-animation: Animate-JAVA 4s;
 -moz-animation: Animate-JAVA 4s;
 -o-animation: Animate-JAVA 4s;
-width: 50%;
+width: 60%;
 height: 50px;
 position: absolute;
 background-color: #8e930c;
@@ -793,25 +828,25 @@ from {
 width: 10px;
 }
 to {
-width: 50%}
+width: 60%}
 }@-webkit-keyframes Animate-JAVA {
 from {
 width: 10px;
 }
 to {
-width: 50%}
+width: 60%}
 }@-moz-keyframes Animate-JAVA {
 from {
 width: 10px;
 }
 to {
-width: 50%}
+width: 60%}
 }@-o-keyframes Animate-JAVA {
 from {
 width: 10px;
 }
 to {
-width: 50%}
+width: 60%}
 }
 /* Animation PHP */
 #Skill-PHP {
@@ -819,7 +854,7 @@ animation: Animate-PHP 4s;
 -webkit-animation: Animate-PHP 4s;
 -moz-animation: Animate-PHP 4s;
 -o-animation: Animate-PHP 4s;
-width: 20%;
+width: 40%;
 height: 50px;
 position: absolute;
 background-color: #5A69A6;
@@ -829,25 +864,25 @@ from {
 width: 10px;
 }
 to {
-width: 20%}
+width: 40%}
 }@-webkit-keyframes Animate-PHP {
 from {
 width: 10px;
 }
 to {
-width: 20%}
+width: 40%}
 }@-moz-keyframes Animate-PHP {
 from {
 width: 10px;
 }
 to {
-width: 20%}
+width: 40%}
 }@-o-keyframes Animate-PHP {
 from {
 width: 10px;
 }
 to {
-width: 20%}
+width: 40%}
 }
 /* Animation SQL */
 #Skill-SQL {
@@ -855,7 +890,7 @@ animation: Animate-SQL 4s;
 -webkit-animation: Animate-SQL 4s;
 -moz-animation: Animate-SQL 4s;
 -o-animation: Animate-SQL 4s;
-width: 20%;
+width: 30%;
 height: 50px;
 position: absolute;
 background-color: #23b1db;
@@ -865,25 +900,25 @@ from {
 width: 10px;
 }
 to {
-width: 20%}
+width: 30%}
 }@-webkit-keyframes Animate-SQL {
 from {
 width: 10px;
 }
 to {
-width: 20%}
+width: 30%}
 }@-moz-keyframes Animate-SQL {
 from {
 width: 10px;
 }
 to {
-width: 20%}
+width: 30%}
 }@-o-keyframes Animate-SQL {
 from {
 width: 10px;
 }
 to {
-width: 20%}
+width: 30%}
 
 }.Skill-Area {
 z-index: 1;
@@ -1160,6 +1195,50 @@ font-size: 18px;
           }
           to {
           width: 25%}
+          }
+/*--------------------------------------------------------------
+# Certifications
+--------------------------------------------------------------*/
+          #competences {
+            padding: 40px 20px;
+          }
+        
+          .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+          }
+        
+          .certifications-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+          }
+        
+          .certification-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            text-align: center;
+          }
+        
+          .certif-pdf {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+          }
+        
+          .certification-card h3 {
+            margin-top: 12px;
+            font-size: 1.1em;
+            color: #2c3e50;
+          }
+        
+          .certification-card p {
+            font-size: 0.95em;
+            color: #555;
           }
 /*--------------------------------------------------------------
 # Projet
