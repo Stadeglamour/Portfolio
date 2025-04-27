@@ -249,7 +249,40 @@
   .portfolio-details .portfolio-description p {
     padding: 0;
   }
+  /*--------------------------------------------------------------
+  # Project img slide
+  --------------------------------------------------------------*/
+  .project-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   
+  .project-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .project-image-slider {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* ajuste la taille ici */
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .project-image-slider img {
+    width: 100%;
+    display: none;
+    transition: opacity 1s ease;
+    border-radius: 8px; /* optionnel pour des coins arrondis */
+  }
+  
+  .project-image-slider img.active {
+    display: block;
+  }
+
   /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/

@@ -59,8 +59,8 @@
             <div class="col-lg-12 d-flex justify-content-center cours-complets">
               <ul style="background: linear-gradient( to top,#040b14, #3a3a3b)" id="portfolio-flters">
                 <li  data-filter="*" class="filter-active">Tous</li>
-                <li  data-filter=".filter-helport">Personnels</li>
-                <li  data-filter=".filter-smartcity">Autres</li>
+                <li  data-filter=".filter-helport">Sites Web</li>
+                <li  data-filter=".filter-smartcity">Applications</li>
               </ul>
             </div>
           </div>
@@ -70,10 +70,10 @@
           <!-- Projet M2L -->
             <div class="col-lg-4 col-md-6 portfolio-item filter-smartcity">
               <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                <img src="/img/article1.png" class="img-fluid portfolio-img">
+                <img src="../img/projet_m2l.png" class="img-fluid portfolio-img">
                 <div class="hover-title"> Projet M2L</div>
                 <div class="portfolio-links">
-                  <a href="#" class="portfolio-lightbox" onclick="showImage('/img/article1.png'); return false;">
+                  <a href="#" class="portfolio-lightbox" onclick="showImage('../img/projet_m2l.png'); return false;">
                     <i class="bi bi-eye-fill"></i> <h6>Détails image</h6></a>
                   <a href="#projetM2L">
                     <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
@@ -87,7 +87,7 @@
             </div>
 
             <!-- Projet GSB -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-smartcity">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-helport">
               <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
                 <img src="../img/gsb_logo.png" class="img-fluid portfolio-img">
                 <div class="hover-title"> Projet GSB WEB</div>
@@ -106,7 +106,7 @@
             </div>
 
             <!-- Projet GSB mobile -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-helport">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-smartcity">
               <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
                 <img src="../img/gsbmobile_logo.png" class="img-fluid portfolio-img">
                 <div class="hover-title"> Projet GSB mobile</div>
@@ -127,10 +127,10 @@
   <!-- Projet Portfolio -->
   <div class="col-lg-4 col-md-6 portfolio-item filter-helport">
     <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-      <img src="/img/Portfolio.png" class="img-fluid portfolio-img">
+      <img src="../img/projet_portfolio.png" class="img-fluid portfolio-img">
       <div class="hover-title"> Portfolio</div>
       <div class="portfolio-links">
-        <a href="#" class="portfolio-lightbox"  onclick="showImage('/img/Portfolio.png'); return false;">
+        <a href="#" class="portfolio-lightbox"  onclick="showImage('../img/projet_portfolio.png'); return false;">
           <i class="bi bi-eye-fill"></i> <h6>Détails image</h6></a>
         <a href="#projetportfolio">
           <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
@@ -145,12 +145,12 @@
 
 
   <!-- Projet Bonus -->
-  <div class="col-lg-4 col-md-6 portfolio-item filter-helport">
+  <div class="col-lg-4 col-md-6 portfolio-item filter-smartcity">
     <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-      <img src="/img/article3.png" class="img-fluid portfolio-img">
+      <img src="../img/projet_bonus.png" class="img-fluid portfolio-img">
       <div class="hover-title"> Projet Bonus</div>
       <div class="portfolio-links">
-        <a href="#" class="portfolio-lightbox"  onclick="showImage('/img/article3.png'); return false;">
+        <a href="#" class="portfolio-lightbox"  onclick="showImage('../img/projet_bonus.png'); return false;">
           <i class="bi bi-eye-fill"></i> <h6>Détails image</h6></a>
         <a href="#projetBonus">
           <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
@@ -182,10 +182,14 @@
         persistance des informations.<br><br>
         <strong>Langages :</strong> Java, JavaFX, MySQL, SceneBuilder…
       </p>
+      <p> Demo du projet : <a href="../html/Mode_emploi_utilisation_m2l.pdf" target="_blank">ici</a></p>
     </div>
-    <div class="project-image">
-      <img src="../img/projet_m2l.png" alt="Aperçu du projet M2L">
+    <div class="project-image-slider">
+      <img src="../img/projet_m2l.png" alt="Image 1" class="slide active">
+      <img src="../img/projet_m2l_2.png" alt="Image 2" class="slide">
+      <img src="../img/projet_m2l_3.png" alt="Image 3" class="slide">
     </div>
+    
   </div>
 </section>
 
@@ -201,7 +205,7 @@
       </p>
     </div>
     <div class="project-image">
-      <img src="../img/portfolio_apercu.png" alt="Aperçu du portfolio">
+      <img src="../img/Portfolio.png" alt="Aperçu du portfolio">
     </div>
   </div>
 </section>
@@ -217,8 +221,9 @@
         <strong>Langages :</strong> Flutter, Dart, Firebase…
       </p>
     </div>
-    <div class="project-image">
-      <img src="../img/gsb_mobile.png" alt="Aperçu GSB Mobile">
+    <div class="project-image-slider">
+      <img src="../img/gsb_mobile_exemple.png" alt="Aperçu GSB Mobile" class="slide active">
+      <img src="../img/gsb_mobile_exemple2.png" alt="Aperçu GSB Mobile 2" class="slide">
     </div>
   </div>
 </section>
@@ -235,8 +240,11 @@
         <strong>Langages :</strong> Symfony, PHP, Firebase…
       </p>
     </div>
-    <div class="project-image">
-      <img src="../img/gsb_web.png" alt="Aperçu GSB Web">
+    <div class="project-image-slider">
+      <img src="../img/gsb_web_exemple.png" alt="Aperçu GSB Web" class="slide active">
+      <img src="../img/gsb_web_exemple2.png" alt="Aperçu GSB Web 2" class="slide">
+      <img src="../img/gsb_web_exemple3.png" alt="Aperçu GSB Web 3" class="slide">
+      <img src="../img/gsb_web_exemple4.png" alt="Aperçu GSB Web 4" class="slide">
     </div>
   </div>
 </section>
@@ -247,12 +255,14 @@
   <div class="project-container">
     <div class="project-text">
       <p>Projet complémentaire réalisé en autonomie pour approfondir certaines notions de développement (en cours de réalisation). 
-        <br><br>
-        <strong>Langages :</strong> 
+        <br>Le projet se nomme <strong>"projet GFS"</strong> (Gestion Films & Séries). Il s'agit d'une application qui consiste à créer
+        un historique de nos films, séries préférés, ainsi que de nos acteurs favoris. Dans cette application, on peut noter selon nos goûts les films que l'on apprécie...<br><br>
+        <strong>Langages :</strong> Flutter, Dart, Supabase...
       </p>
     </div>
-    <div class="project-image">
-      <img src="../img/projet_bonus.png" alt="Aperçu projet Bonus">
+    <div class="project-image-slider">
+      <img src="../img/projet_bonus.png" alt="Aperçu projet Bonus" class="slide active">
+      <!-- <img src="../img/projet_bonus_2.png" alt="Aperçu projet Bonus 2" class="slide"> -->
     </div>
   </div>
 </section>
@@ -268,6 +278,46 @@
 </div>
 </footer>
 <script src="../js/script.js"></script>
+<script>
+  document.querySelectorAll('.project-image-slider').forEach(slider => {
+    const slides = slider.querySelectorAll('img');
+    let currentSlide = 0;
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+          slide.classList.add('active');
+        }
+      });
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    setInterval(nextSlide, 3000); // change toutes les 3 secondes pour CE slider
+  });
+  </script>  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Ajoute jQuery si pas déjà là -->
 
+  <script>
+  $(document).ready(function() {
+    $('#portfolio-flters li').on('click', function() {
+      $('#portfolio-flters li').removeClass('filter-active');
+      $(this).addClass('filter-active');
+  
+      var filterValue = $(this).attr('data-filter');
+      if (filterValue == '*') {
+        $('.portfolio-item').show();
+      } else {
+        $('.portfolio-item').hide();
+        $(filterValue).show();
+      }
+    });
+  });
+  </script>
+  
 </body>
 </html>
